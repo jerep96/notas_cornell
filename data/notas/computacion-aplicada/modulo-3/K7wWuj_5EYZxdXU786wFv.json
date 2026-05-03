@@ -1,0 +1,79 @@
+{
+  "titulo": "Expresiones regulares",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 3",
+  "tematicaDetectada": "Regex: alternación, cuantificación, agrupación y caracteres especiales",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Primera Edición [Pág. 63–86]",
+  "preguntas": [
+    "¿Qué son las expresiones regulares (regex)?",
+    "¿Qué es la alternación y cómo se usa?",
+    "¿Qué operadores de cuantificación existen y qué significa cada uno?",
+    "¿Qué es la agrupación con () y []?",
+    "¿Qué significa ^ dentro y fuera de un grupo []?",
+    "¿Qué son los caracteres especiales . ^ y $?",
+    "¿Cómo se prueban expresiones regulares desde la terminal?"
+  ],
+  "notas": [
+    {
+      "text": "Las **expresiones regulares (regex)** son conjuntos de reglas que definen patrones de búsqueda complejos en cadenas de texto. En Linux se usan con comandos como `grep` y `find` para encontrar, validar y manipular textos.",
+      "hl": true
+    },
+    {
+      "text": "**Alternación:** usa el pipe `|` como operador OR. Ejemplo: `/perra|o/` coincide con 'perra' o 'perro'. Uso: `cat Gerencias | grep -E 'Tecnologia|Deposito'`.",
+      "hl": false
+    },
+    {
+      "text": "**Cuantificación — operadores:**",
+      "hl": true
+    },
+    {
+      "text": "`*` cero o más veces | `+` una o más veces | `?` cero o una vez | `{n}` exactamente n veces | `{n,m}` entre n y m veces.",
+      "hl": false
+    },
+    {
+      "text": "Ejemplos: `/ab+c/` coincide con abc y abbc, pero no con ac. `/ab?c/` coincide con ac y abc. `/a{1,2}/` coincide con a y aa, pero no con aaa.",
+      "hl": false
+    },
+    {
+      "text": "**Agrupación con ():** agrupa una expresión para aplicarle cuantificadores como subexpresión. Ejemplo: `(abc)+` coincide al menos una vez con 'abc' completo.",
+      "hl": false
+    },
+    {
+      "text": "**Agrupación con []:** define un conjunto de caracteres posibles. `[aeiou]` coincide con cualquier vocal. `[a-z0-9]` coincide con letras de a a z o cualquier número.",
+      "hl": false
+    },
+    {
+      "text": "**`[^aeiou]`:** el símbolo `^` dentro de `[]` es negación; coincide con cualquier carácter que NO sea vocal.",
+      "hl": true
+    },
+    {
+      "text": "**Caracteres especiales:**",
+      "hl": false
+    },
+    {
+      "text": "`. (punto)` coincide con cualquier carácter excepto nueva línea. `^` fuera de `[]` coincide con el inicio de la línea. `$` coincide con el final de la línea. Ejemplo: `grep -E 's$'` encuentra líneas que terminan en 's'.",
+      "hl": false
+    },
+    {
+      "text": "**Prueba desde terminal:** `echo 'expresion' | egrep 'regex'` o `grep -E`. Herramienta online: https://regex101.com — el verificador colorea solo lo que coincide con el patrón.",
+      "hl": false
+    },
+    {
+      "text": "**Ejemplo real — validación de email:** `grep -E '^([0-9A-Za-z._%-]+@[0-9A-Za-z._-]+\\.[A-Za-z]{2,6})*$'` valida que la cadena cumpla el formato de correo electrónico.",
+      "hl": false
+    }
+  ],
+  "resumen": "Las expresiones regulares (regex) permiten definir patrones de búsqueda complejos en texto, ampliamente usadas en Linux con grep y find. Se clasifican en alternación (OR con |), cuantificación (*, +, ?, {n,m}), agrupación con () para subexpresiones y [] para conjuntos de caracteres, y caracteres especiales (., ^ para inicio de línea, $ para fin de línea). El símbolo ^ dentro de [] invierte el conjunto. Se pueden probar desde la terminal con grep -E o egrep, y con herramientas online como regex101.com.",
+  "tags": [
+    "regex",
+    "expresiones-regulares",
+    "grep",
+    "alternacion",
+    "cuantificacion",
+    "agrupacion",
+    "GNU/Linux",
+    "M3"
+  ],
+  "id": "K7wWuj_5EYZxdXU786wFv",
+  "fecha": "2026-05-03"
+}

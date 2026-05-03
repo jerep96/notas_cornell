@@ -1,0 +1,53 @@
+{
+  "titulo": "GNU/Linux: Historia, Origen y Evolución",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 1",
+  "tematicaDetectada": "Historia del software libre y nacimiento del kernel Linux",
+  "fuente": "APU 0306 — GNU/Linux Historia Origen y Evolución",
+  "preguntas": [
+    "¿Qué evento concreto llevó a Stallman a crear el proyecto GNU?",
+    "¿Qué significa el acrónimo GNU y por qué tiene ese nombre?",
+    "¿Qué rol cumplió la licencia GPL en la expansión del software libre?",
+    "¿Qué es Minix y qué relación tuvo con la creación del kernel Linux?",
+    "¿Por qué el sistema operativo se llama GNU/Linux y no solo Linux?",
+    "¿Cómo evolucionó Unix desde Bell Labs hasta su declive frente a GNU/Linux?"
+  ],
+  "notas": [
+    {
+      "text": "**Richard Stallman** lanzó el proyecto **GNU** en 1983 al serle negado el acceso al código fuente de una impresora Xerox — reacción directa contra el software propietario.",
+      "hl": true
+    },
+    {
+      "text": "La **licencia GPL** (Licencia Pública General de GNU) garantiza que cualquier software publicado bajo ella permanezca libre y modificable, incluso si es redistribuido por terceros.",
+      "hl": false
+    },
+    {
+      "text": "**Unix** nació en Bell Labs de mano de Ken Thompson (1971), se reescribió en C en 1973, y se fragmentó en versiones comerciales (System V, SunOS, AIX, HP-UX) a partir de 1980.",
+      "hl": false
+    },
+    {
+      "text": "**Linus Torvalds** creó su kernel en 1991 partiendo de Minix, lo liberó bajo GPL y la comunidad global lo combinó con las herramientas GNU, formando así el sistema completo.",
+      "hl": false
+    },
+    {
+      "text": "El **kernel** es el primer programa en cargarse: gestiona memoria, CPU y periféricos, actuando como intermediario entre hardware y software.",
+      "hl": false
+    },
+    {
+      "text": "Hoy **GNU/Linux** domina servidores, supercomputadoras y dispositivos móviles (Android); Unix quedó relegado a sistemas heredados y macOS (basado en BSD).",
+      "hl": false
+    }
+  ],
+  "resumen": "El movimiento del software libre nació de la resistencia de Stallman al software propietario: creó GNU en 1983 y la licencia GPL para garantizar la libertad del código. Décadas después, Linus Torvalds añadió el kernel Linux (1991), y la combinación GNU/Linux se convirtió en el estándar de facto en servidores e infraestructura de internet, desplazando a Unix que había dominado desde los años 70.",
+  "tags": [
+    "computacion-aplicada",
+    "modulo1",
+    "gnu-linux",
+    "historia",
+    "stallman",
+    "torvalds",
+    "kernel"
+  ],
+  "id": "AyAal-FFadlJ3eSWDJwPl",
+  "fecha": "2026-05-03"
+}

@@ -1,0 +1,104 @@
+{
+  "titulo": "Redes",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 4",
+  "tematicaDetectada": "Tipos de red, IP, clases, máscara, gateway y configuración en Debian",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Pp. 83–208 (9.13.3)",
+  "preguntas": [
+    "¿Qué es una red informática y cuál es el modelo básico de comunicación?",
+    "¿Cuáles son los tipos de redes según su alcance geográfico?",
+    "¿Qué es una dirección IP y cuántas versiones existen?",
+    "¿Cómo se compone una dirección IPv4?",
+    "¿Cuáles son las clases de direcciones IPv4 y para qué se usa cada una?",
+    "¿Qué es la máscara de red y qué define?",
+    "¿Qué es la notación CIDR?",
+    "¿Qué es el gateway y cuál es su función?",
+    "¿Cómo se configura la red en Debian y cuáles son las directivas del archivo interfaces?",
+    "¿Cuál es la diferencia entre asignación estática y automática (DHCP)?"
+  ],
+  "notas": [
+    {
+      "text": "Una **red informática** es un conjunto de dispositivos conectados para compartir recursos e intercambiar información. La comunicación mínima requiere 2 dispositivos: un **cliente** (genera peticiones) y un **servidor** (escucha y responde).",
+      "hl": true
+    },
+    {
+      "text": "**LAN (Local Area Network):** cubre áreas pequeñas (hogar, oficina, edificio). Permite compartir archivos e impresoras.",
+      "hl": false
+    },
+    {
+      "text": "**WAN (Wide Area Network):** abarca grandes áreas geográficas (ciudades, países, continentes). Internet es el ejemplo más común.",
+      "hl": false
+    },
+    {
+      "text": "**PAN (Personal Area Network):** red personal de corto alcance; conecta dispositivos personales (auriculares, teléfonos) vía Bluetooth.",
+      "hl": false
+    },
+    {
+      "text": "**MAN (Metropolitan Area Network):** cubre áreas metropolitanas (una ciudad). Más grande que LAN, menos que WAN.",
+      "hl": false
+    },
+    {
+      "text": "Una **dirección IP** es un número único asignado a cada dispositivo en una red para identificarlo y permitirle comunicarse. Existen 2 versiones: IPv4 e IPv6.",
+      "hl": true
+    },
+    {
+      "text": "**IPv4:** 32 bits, notación decimal separada por puntos. 4 octetos de 8 bits, cada uno entre 0 y 255. Ejemplo: 192.168.1.1 = 11000000.10101000.00000001.00000001 en binario.",
+      "hl": false
+    },
+    {
+      "text": "**IPv6:** 128 bits, notación hexadecimal separada por dos puntos. Desarrollada para superar las limitaciones de IPv4.",
+      "hl": false
+    },
+    {
+      "text": "**Clases IPv4 — Clase A:** 0.0.0.0 a 127.255.255.255, formato red.host.host.host, hasta 16.777.214 hosts. Redes grandes.",
+      "hl": false
+    },
+    {
+      "text": "**Clase B:** 128.0.0.0 a 191.255.255.255, formato red.red.host.host, hasta 65.534 hosts. Redes medianas.",
+      "hl": false
+    },
+    {
+      "text": "**Clase C:** 192.0.0.0 a 223.255.255.255, formato red.red.red.host, hasta 254 hosts. Redes pequeñas. También existen Clase D (multicast) y Clase E (experimental).",
+      "hl": false
+    },
+    {
+      "text": "La **máscara de red (netmask)** define qué parte de la IP corresponde a la red (bits en 1) y qué parte a los hosts (bits en 0). Ejemplo: 255.255.255.0 = /24 → primeros 24 bits para la red, últimos 8 para hosts (rango 1–254).",
+      "hl": true
+    },
+    {
+      "text": "**CIDR (Classless Inter-Domain Routing):** notación abreviada que indica la cantidad de bits de red como sufijo. Ejemplo: 192.168.1.1/24 equivale a máscara 255.255.255.0.",
+      "hl": false
+    },
+    {
+      "text": "El **gateway (puerta de enlace)** es el dispositivo que conecta la red local con otras redes (incluyendo internet). Los paquetes destinados fuera de la red local se envían al gateway, generalmente el router del ISP.",
+      "hl": true
+    },
+    {
+      "text": "En Debian, la configuración de red se gestiona mediante el archivo `/etc/network/interfaces`. Directivas: **auto** inicia la interfaz automáticamente al arrancar. **allow-hotplug** activa la interfaz al detectar el hardware. **iface** define la interfaz con 3 parámetros: nombre (eth0, enp0s3), tipo (inet/inet6), método (static/dhcp).",
+      "hl": false
+    },
+    {
+      "text": "**Asignación estática:** se configuran manualmente `address`, `netmask` y `gateway` en el archivo interfaces con método `static`.",
+      "hl": false
+    },
+    {
+      "text": "**Asignación automática (DHCP):** se usa método `dhcp` en el archivo interfaces; el servidor DHCP de la red asigna IP, máscara, gateway y DNS automáticamente.",
+      "hl": false
+    }
+  ],
+  "resumen": "Una red informática conecta dispositivos para compartir recursos bajo el modelo cliente-servidor. Se clasifican por alcance en PAN, LAN, MAN y WAN. Las direcciones IPv4 tienen 32 bits organizados en 4 octetos y se dividen en clases A, B y C según el tamaño de red. La máscara de red define qué parte de la IP identifica la red y cuáles los hosts; en notación CIDR se expresa como sufijo (ej: /24). En Debian la configuración de red se gestiona desde /etc/network/interfaces, con asignación estática (manual) o automática vía DHCP.",
+  "tags": [
+    "redes",
+    "IPv4",
+    "IPv6",
+    "mascara-red",
+    "CIDR",
+    "gateway",
+    "LAN",
+    "WAN",
+    "debian",
+    "M4"
+  ],
+  "id": "pFFw9E7jmUnGRHAEd8IXk",
+  "fecha": "2026-05-03"
+}

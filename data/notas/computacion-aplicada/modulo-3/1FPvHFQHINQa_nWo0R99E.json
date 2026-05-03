@@ -1,0 +1,90 @@
+{
+  "titulo": "Gestor de paquetes",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 3",
+  "tematicaDetectada": "APT, dpkg, repositorios, distros y upgrade en Debian",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Primera Edición; Debian. https://wiki.debian.org/DebianBullseye",
+  "preguntas": [
+    "¿Qué es un gestor de paquetes y qué permite hacer?",
+    "¿Qué gestor usa Debian y dónde está su configuración?",
+    "¿Qué es una distribución (distro) de Linux?",
+    "¿Qué diferencia hay entre Rolling Release y Standard Release?",
+    "¿Qué es el archivo sources.list y qué formato tiene cada línea?",
+    "¿Qué componentes puede tener un repositorio Debian?",
+    "¿Qué diferencia hay entre APT y dpkg?",
+    "¿Qué diferencia hay entre apt y apt-get?",
+    "¿Cuál es el proceso de instalación de un paquete con APT?",
+    "¿Cómo se realiza un upgrade de distribución en Debian?",
+    "¿Cuáles son los comandos APT más usados?"
+  ],
+  "notas": [
+    {
+      "text": "Un **gestor de paquetes** permite automatizar la instalación, actualización, configuración y eliminación de software. Cada distro tiene el suyo: RedHat usa YUM (/etc/yum.conf), ArchLinux usa PACMAN (/etc/pacman.conf), **Debian usa APT** (/etc/apt/sources.list).",
+      "hl": true
+    },
+    {
+      "text": "Una **distribución (distro)** es un SO basado en el kernel de Linux con herramientas y configuraciones propias. Pueden variar en interfaz, manejo de actualizaciones y archivos de configuración.",
+      "hl": false
+    },
+    {
+      "text": "**Rolling Release:** actualización continua, sin versiones fijas; siempre tiene el software más reciente pero con mayor riesgo de inestabilidad. Ejemplos: Arch Linux, OpenSUSE.",
+      "hl": false
+    },
+    {
+      "text": "**Standard Release (Point Release):** actualizaciones agrupadas en versiones estables periódicas. Prioriza la estabilidad; común en producción. Ejemplos: Debian, Ubuntu LTS, Fedora.",
+      "hl": false
+    },
+    {
+      "text": "El archivo **sources.list** se crea durante la instalación y almacena los repositorios disponibles. Formato de cada línea: `deb [opciones] uri distro [componente]`.",
+      "hl": true
+    },
+    {
+      "text": "**deb:** paquetes binarios precompilados .deb. **deb-src:** paquetes fuente originales del programa.",
+      "hl": false
+    },
+    {
+      "text": "**Componentes del repositorio — main:** paquetes libres que cumplen la DFSG. **contrib:** libres compatibles con DFSG pero con dependencias que podrían no ser gratuitas. **non-free:** paquetes con costo (drivers, codecs) que no cumplen la DFSG.",
+      "hl": false
+    },
+    {
+      "text": "**APT (Advanced Package Tool):** capa de alto nivel que resuelve y descarga dependencias automáticamente; interactúa con repositorios remotos.",
+      "hl": true
+    },
+    {
+      "text": "**dpkg:** capa de bajo nivel; gestiona directamente archivos .deb locales pero NO resuelve dependencias automáticamente. APT es una capa superior a dpkg.",
+      "hl": true
+    },
+    {
+      "text": "**apt vs apt-get:** apt fue introducido en Debian 8 como interfaz más amigable que combina apt-get y apt-cache. Ambos coexisten y son equivalentes en la práctica.",
+      "hl": false
+    },
+    {
+      "text": "**Proceso de instalación con APT:** 1) usuario ejecuta `sudo apt-get install [app]` → 2) consulta índice local → 3) identifica paquetes a descargar → 4) va al sources.list → 5) repositorio gestiona los paquetes → 6) los entrega al gestor → 7) se instalan localmente.",
+      "hl": false
+    },
+    {
+      "text": "**`apt-get update`:** actualiza el índice local comparándolo con los repositorios del sources.list. Debe ejecutarse periódicamente o tras modificar el sources.list.",
+      "hl": false
+    },
+    {
+      "text": "**Upgrade de distribución (ej: Debian 11 → 12):** 1) `apt update` 2) `apt upgrade` 3) `apt autoremove` → editar sources.list con repositorios de bookworm → `apt update` → `apt full-upgrade` → `reboot` → verificar con `lsb_release -a` o `cat /etc/debian_version`.",
+      "hl": true
+    },
+    {
+      "text": "**Comandos APT esenciales:** `apt-get update` actualiza índice | `apt-get install [app]` instala | `apt-get upgrade` actualiza paquetes | `apt-get remove [app]` desinstala (conserva configs) | `apt-get purge [app]` desinstala + borra configs | `apt-cache search [app]` busca en índice local | `apt show [app]` muestra info del paquete.",
+      "hl": false
+    }
+  ],
+  "resumen": "El gestor de paquetes automatiza la gestión de software en Linux: cada distro tiene el suyo, y Debian usa APT con repositorios configurados en /etc/apt/sources.list. APT opera como capa de alto nivel sobre dpkg, resolviendo dependencias automáticamente. Los repositorios se clasifican en main, contrib y non-free según su licencia. Para actualizar el SO completo a una nueva versión estable se sigue un proceso de upgrade de distribución que implica modificar el sources.list y ejecutar apt full-upgrade.",
+  "tags": [
+    "apt",
+    "dpkg",
+    "repositorios",
+    "sources.list",
+    "gestor-paquetes",
+    "debian",
+    "M3"
+  ],
+  "id": "1FPvHFQHINQa_nWo0R99E",
+  "fecha": "2026-05-03"
+}

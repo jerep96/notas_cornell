@@ -1,0 +1,87 @@
+{
+  "titulo": "Administración de usuarios",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 5",
+  "tematicaDetectada": "Tipos de usuarios, archivos de configuración, comandos y recuperación de root",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Pp. 97–107 (5.6)",
+  "preguntas": [
+    "¿Qué es un sistema multiusuario y por qué importa la administración de usuarios?",
+    "¿Qué son el UID y el GID?",
+    "¿Cuáles son los 3 tipos de usuarios en Linux y qué los distingue?",
+    "¿Qué información contiene /etc/passwd y cuáles son sus 7 campos?",
+    "¿Qué información contiene /etc/shadow y cuáles son sus 9 campos?",
+    "¿Qué información contiene /etc/group y cuáles son sus campos?",
+    "¿Cuáles son los comandos principales para gestionar usuarios y grupos?",
+    "¿Cómo se recupera la contraseña de root desde GRUB?"
+  ],
+  "notas": [
+    {
+      "text": "GNU/Linux es un sistema **multiusuario**: puede proveer servicio a múltiples usuarios en simultáneo. Una mala administración de usuarios genera vulnerabilidades de seguridad.",
+      "hl": true
+    },
+    {
+      "text": "Cada usuario tiene un **UID (User ID)** único. Cada grupo tiene un **GID (Group ID)** único. Un usuario pertenece a un grupo principal (mismo nombre que el usuario) y puede pertenecer a grupos adicionales.",
+      "hl": true
+    },
+    {
+      "text": "**Usuario root (UID 0):** superusuario con acceso ilimitado. Puede leer, escribir y ejecutar en cualquier archivo o directorio. Su uso directo en tareas diarias es una mala práctica; se recomienda usar SUDO en su lugar.",
+      "hl": true
+    },
+    {
+      "text": "**Usuarios especiales (no-login):** usuarios del sistema que no inician sesión. Ejecutan servicios como apache, mysql, sshd. Sus UID/GID están entre 1 y 100 (definidos en /etc/login.defs). Ejemplos: www-data, sshd, daemon, nobody.",
+      "hl": false
+    },
+    {
+      "text": "**Usuarios normales:** creados por administradores para personas. UID generalmente > 1000. Tienen home en /home/nombre. El home de root está en / (no en /home).",
+      "hl": false
+    },
+    {
+      "text": "**Archivo /etc/passwd** — 7 campos separados por ':': 1) login, 2) 'x' (contraseña en shadow), 3) UID, 4) GID, 5) descripción, 6) home, 7) shell predeterminado.",
+      "hl": true
+    },
+    {
+      "text": "Ejemplo: `alumno:x:1000:1000:Usuario Alumno:/home/alumno:/bin/bash`",
+      "hl": false
+    },
+    {
+      "text": "**Archivo /etc/shadow** — 9 campos: 1) login, 2) hash de contraseña (* = no-login), 3) días desde 01/01/1970 del último cambio, 4) mínimo días entre cambios, 5) máximo días de validez, 6) días de aviso antes de expirar, 7) días de inactividad post-expiración, 8) días de expiración de la cuenta, 9) reservado.",
+      "hl": true
+    },
+    {
+      "text": "**Archivo /etc/group** — 4 campos: 1) nombre del grupo, 2) 'x' (sin contraseña), 3) GID, 4) usuarios miembros separados por comas. Ejemplo: `Tecnologia:x:1002:alumno,jperez`.",
+      "hl": false
+    },
+    {
+      "text": "**useradd / adduser:** crea usuario. Opciones: `-m` crea home, `-s` define shell, `-c` comentario/nombre completo, `-G` grupos adicionales, `-u` UID, `-d` home, `-r` usuario especial.",
+      "hl": false
+    },
+    {
+      "text": "**usermod:** modifica usuario. `-c` descripción, `-d` home, `-G` grupos, `-L` bloquea, `-U` desbloquea, `-s` shell. Ejemplo: `usermod -aG Tecnologia jperez`.",
+      "hl": false
+    },
+    {
+      "text": "**userdel:** elimina usuario. Sin opción: solo borra la cuenta. `-r` borra también el home. **passwd:** cambia contraseña. **groupadd / groupdel / groupmod:** crean, eliminan o modifican grupos. **groups:** muestra los grupos del usuario.",
+      "hl": false
+    },
+    {
+      "text": "**Recuperación de contraseña de root desde GRUB:** 1) Reiniciar → 2) presionar 'E' en GRUB antes del contador → 3) localizar línea `linux /boot/vmlinuz-… ro quiet` → 4) reemplazar `ro quiet` por `rw init=/bin/bash` → 5) F10 para arrancar → 6) ejecutar `passwd` para nueva contraseña → 7) reiniciar con `exec /sbin/init`.",
+      "hl": true
+    }
+  ],
+  "resumen": "Linux es un sistema multiusuario con tres tipos de usuarios: root (UID 0, acceso total), especiales (UID 1-100, ejecutan servicios del sistema sin login) y normales (UID > 1000, home en /home). La configuración se almacena en tres archivos clave: /etc/passwd (datos del usuario), /etc/shadow (contraseñas hasheadas y política de expiración) y /etc/group (grupos y membresías). Los comandos useradd, usermod y userdel permiten gestionar usuarios, mientras que groupadd/groupdel/groupmod gestionan grupos. Si se pierde la contraseña de root, puede recuperarse modificando los parámetros de arranque en GRUB.",
+  "tags": [
+    "usuarios",
+    "root",
+    "UID",
+    "GID",
+    "passwd",
+    "shadow",
+    "group",
+    "useradd",
+    "usermod",
+    "GRUB",
+    "M5"
+  ],
+  "id": "hAL1Bi0gc3ZBU9hS8EPEQ",
+  "fecha": "2026-05-03"
+}

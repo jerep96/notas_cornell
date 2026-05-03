@@ -1,0 +1,47 @@
+{
+  "titulo": "Introducción a Sistemas y Métodos: Conceptos Fundamentales",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 1",
+  "tematicaDetectada": "Procedimiento, método, dato, información y sistema de información",
+  "fuente": "APU 0177 — Definiciones / PPT Introducción a Sistemas y Métodos",
+  "preguntas": [
+    "¿Qué diferencia hay entre procedimiento y método?",
+    "¿Qué distingue un dato de información?",
+    "¿Qué es un sistema abierto y qué rol cumple el feedback en él?",
+    "¿Qué es un sistema de información y cuáles son sus tres funciones principales?",
+    "¿Para qué sirve la función de organización y métodos dentro de una empresa?"
+  ],
+  "notas": [
+    {
+      "text": "Un **procedimiento** es una serie detallada de instrucciones para ejecutar una secuencia de acciones que ocurren con regularidad; el **método** es la manera general de proceder u obrar (analítico o sintético).",
+      "hl": true
+    },
+    {
+      "text": "**Dato** = hechos desagregados sin procesar. **Información** = datos procesados de forma significativa para el receptor, con valor real para decisiones presentes o futuras.",
+      "hl": false
+    },
+    {
+      "text": "Un **sistema abierto** recibe entradas, las transforma y genera salidas; las salidas pueden generar **feedback** hacia el sistema. Se ve influenciado por un entorno que la organización muchas veces no puede modificar.",
+      "hl": false
+    },
+    {
+      "text": "El **sistema de información** es un conjunto integrado de personas y máquinas que entrega a la organización la información necesaria para apoyar operaciones, administración y toma de decisiones.",
+      "hl": false
+    },
+    {
+      "text": "La **función de organización y métodos** analiza los problemas de estructura y procedimientos de la empresa para optimizar la infraestructura administrativa y lograr los objetivos de la alta dirección.",
+      "hl": false
+    }
+  ],
+  "resumen": "Sistemas y Métodos trabaja sobre cómo las organizaciones procesan y usan la información. La base conceptual distingue entre datos (brutos) e información (procesada y útil), y entre procedimiento (instrucciones específicas) y método (forma general de actuar). El sistema de información integra personas y tecnología para dar soporte a las operaciones, y la función de organización y métodos actúa como analista interno de estructura y procesos.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo1",
+    "procedimiento",
+    "metodo",
+    "sistema-abierto",
+    "sistema-de-informacion"
+  ],
+  "id": "AtqxhVDWUarOc_pae5MGY",
+  "fecha": "2026-05-03"
+}

@@ -1,0 +1,81 @@
+{
+  "titulo": "Redireccionamiento y Pipes",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 3",
+  "tematicaDetectada": "Operadores de redirección, /dev/null, pipes y búsqueda con find/locate",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Primera Edición [Pág. 63–86]",
+  "preguntas": [
+    "¿Qué es el redireccionamiento en Linux?",
+    "¿Qué diferencia hay entre > y >>?",
+    "¿Para qué sirve < (menor)?",
+    "¿Cómo se redirige el stderr a un archivo?",
+    "¿Qué es /dev/null y para qué se usa?",
+    "¿Cómo se redirigen stdout y stderr al mismo archivo?",
+    "¿Qué es el pipe | y cómo funciona?",
+    "¿Qué diferencia hay entre find y locate?"
+  ],
+  "notas": [
+    {
+      "text": "El **redireccionamiento** permite controlar los flujos de entrada/salida de comandos: almacenar resultados en archivos, redirigir errores, o encadenar comandos.",
+      "hl": true
+    },
+    {
+      "text": "**> (Mayor):** redirige stdout a un archivo. Si el archivo no existe, lo crea; si ya existe, lo **sobreescribe**. Ejemplo: `ls -l /etc > archivo_ls`.",
+      "hl": true
+    },
+    {
+      "text": "**>> (Doble Mayor):** redirige stdout **añadiendo** al final de un archivo existente, o lo crea si no existe. Ejemplo: `ls -l /var >> archivo_ls`.",
+      "hl": true
+    },
+    {
+      "text": "**< (Menor):** el comando lee la entrada desde un archivo en lugar del teclado (stdin). Ejemplo: `cat < archivo_ls`.",
+      "hl": false
+    },
+    {
+      "text": "**Redireccionamiento de stderr (canal 2):** se usa `2>` para redirigir errores a un archivo. Ejemplo: `ls /dir_inexistente 2> error.log`. El `>` sin número equivale a `1>` (stdout).",
+      "hl": true
+    },
+    {
+      "text": "**/dev/null:** dispositivo 'agujero negro' del sistema. Todo lo enviado aquí se descarta permanentemente. Útil para suprimir errores o salidas no deseadas.",
+      "hl": true
+    },
+    {
+      "text": "**Redireccionamientos múltiples:** `cmd >> salida.txt 2> error.log` (stdout y stderr a archivos distintos) | `cmd >> salida.txt 2> /dev/null` (descarta errores) | `cmd &> salida.txt` (stdout y stderr juntos, bash 4.0+) | `cmd > salida.txt 2>&1` (compatible con versiones anteriores).",
+      "hl": false
+    },
+    {
+      "text": "El **pipe |** envía el stdout de un comando como stdin del siguiente, encadenando comandos. Ejemplo: `cat /var/log/dpkg.log | grep 'installed'` busca líneas con 'installed' en el log.",
+      "hl": true
+    },
+    {
+      "text": "**find:** búsqueda exhaustiva en tiempo real. Sintaxis: `find [ruta] [opciones] [acción]`. Opciones: `-name` por nombre, `-iname` sin distinción de mayúsculas, `-type f/d` archivo o directorio, `-size +100M/-500k` por tamaño, `-mtime -7/+30` por días de modificación, `-perm 755` por permisos.",
+      "hl": false
+    },
+    {
+      "text": "**find — acciones:** `-exec comando {} \\;` ejecuta un comando sobre cada archivo encontrado. `-delete` elimina los archivos encontrados. Ejemplo: `find /var/log -name '*.log' -delete`.",
+      "hl": false
+    },
+    {
+      "text": "**locate:** usa una base de datos indexada (mlocate); mucho más rápido que find pero depende de que la base esté actualizada. Requiere instalación y `updatedb` (como root) para actualizar el índice.",
+      "hl": false
+    },
+    {
+      "text": "**Comparación find vs locate:** find es exhaustivo y admite criterios avanzados pero es lento (busca en tiempo real). locate es muy rápido pero depende de la base de datos indexada, que puede estar desactualizada.",
+      "hl": false
+    }
+  ],
+  "resumen": "El redireccionamiento permite controlar a dónde van los streams de un comando: > sobreescribe un archivo, >> añade al final, < lee desde un archivo, y 2> redirige los errores. /dev/null actúa como agujero negro descartando cualquier dato enviado. El pipe | encadena comandos convirtiendo el stdout de uno en stdin del siguiente. Para buscar archivos, find hace búsquedas exhaustivas en tiempo real con criterios avanzados, mientras que locate es más rápido pero requiere mantener actualizada su base de datos.",
+  "tags": [
+    "redireccionamiento",
+    "pipes",
+    "find",
+    "locate",
+    "dev-null",
+    "stderr",
+    "stdout",
+    "GNU/Linux",
+    "M3"
+  ],
+  "id": "sRsgTc3isKwLbZXtZ0jbG",
+  "fecha": "2026-05-03"
+}

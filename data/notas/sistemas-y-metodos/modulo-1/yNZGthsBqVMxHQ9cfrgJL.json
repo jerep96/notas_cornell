@@ -1,0 +1,47 @@
+{
+  "titulo": "Organización Formal e Informal",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 1",
+  "tematicaDetectada": "Dualidad organizacional: estructura formal e informal",
+  "fuente": "APU 0177 — PPT La Organización / Tipos de Organización",
+  "preguntas": [
+    "¿Qué características definen a una organización formal?",
+    "¿Cómo surge la organización informal y por qué es inevitable?",
+    "¿Cuáles son los beneficios y limitaciones de cada tipo de organización?",
+    "¿Por qué la limitación de la organización informal más peligrosa es la resistencia al cambio?",
+    "¿Cómo debe relacionarse un gerente con la organización informal?"
+  ],
+  "notas": [
+    {
+      "text": "En toda organización coexisten dos estructuras: la **organización formal** (planificada, con autoridad y reglas explícitas) y la **organización informal** (espontánea, basada en relaciones sociales y valores de grupo).",
+      "hl": true
+    },
+    {
+      "text": "La **organización formal** se caracteriza por: división del trabajo, departamentalización, autoridad formal, delegación y coordinación. Se representa en el **organigrama**.",
+      "hl": false
+    },
+    {
+      "text": "**Beneficios de la formal**: clarifica objetivos y responsabilidades, optimiza recursos, evita superposición de tareas y reduce la rotación de personal. **Limitaciones**: puede inhibir la iniciativa y no satisfacer necesidades sociales.",
+      "hl": false
+    },
+    {
+      "text": "La **organización informal** surge espontáneamente a partir de la amistad o intereses comunes. Sus líderes no son designados y la comunicación fluye por **canales informales** (radiopasillo).",
+      "hl": false
+    },
+    {
+      "text": "**Beneficios de la informal**: feedbacks rápidos, mejores relaciones interpersonales, autocontrol y satisfacción social. **Limitaciones**: resistencia al cambio, conflicto de roles, rumores y conformidad.",
+      "hl": false
+    }
+  ],
+  "resumen": "Toda organización tiene una dimensión formal (deliberada, jerárquica, reglamentada) y una informal (espontánea, social, sin reglas escritas). La formal garantiza claridad y eficiencia; la informal satisface necesidades sociales y acelera la comunicación real. Un gerente eficaz no suprime la organización informal sino que la comprende y alinea con los objetivos formales para aprovechar su potencial sin que sus limitaciones (rumores, resistencia al cambio) afecten el desempeño.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo1",
+    "organizacion-formal",
+    "organizacion-informal",
+    "liderazgo",
+    "comunicacion"
+  ],
+  "id": "yNZGthsBqVMxHQ9cfrgJL",
+  "fecha": "2026-05-03"
+}

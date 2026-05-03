@@ -1,0 +1,73 @@
+{
+  "titulo": "Permisos — Formato octal y formato simbólico",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 6",
+  "tematicaDetectada": "Permisos de archivos y directorios: lectura, escritura, ejecución, chmod, chown, chgrp",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Pp. 107–119 (5.7–5.6)",
+  "preguntas": [
+    "¿Qué son los permisos en Linux y cómo se dividen?",
+    "¿Cómo se interpreta la cadena de 10 caracteres de permisos en ls -l?",
+    "¿Cuáles son los valores numéricos de r, w y x en formato octal?",
+    "¿Cómo se calcula el permiso octal de un archivo?",
+    "¿Cuál es la tabla completa de combinaciones octal/binario/simbólico?",
+    "¿Cómo se usa chmod en formato octal?",
+    "¿Cómo se usa chmod en formato simbólico?",
+    "¿Cómo se cambia el propietario y el grupo de un archivo?"
+  ],
+  "notas": [
+    {
+      "text": "Los **permisos** en Linux definen quién puede Leer (r), Escribir (w) o Ejecutar (x) un archivo o directorio. Se dividen en 3 grupos: **Usuario/Owner (u)**, **Grupo (g)** y **Otros (o)**.",
+      "hl": true
+    },
+    {
+      "text": "La cadena de permisos tiene **10 posiciones** en `ls -l`. El primer carácter indica el tipo: `-` archivo regular, `d` directorio, `l` link, `b` bloque, `c` carácter, `p` pipe. Los siguientes 9 se agrupan de 3 en 3: [rwx] owner | [rwx] group | [rwx] others.",
+      "hl": true
+    },
+    {
+      "text": "Ejemplo: `-rwxr-xr--` → archivo regular | owner: rwx | group: r-x | others: r--",
+      "hl": false
+    },
+    {
+      "text": "**Valores en formato octal:** r = 4, w = 2, x = 1. El permiso octal de cada grupo es la suma de los valores de los permisos activos.",
+      "hl": true
+    },
+    {
+      "text": "rwx = 7 (4+2+1) | rw- = 6 (4+2) | r-x = 5 (4+1) | r-- = 4 | -wx = 3 (2+1) | -w- = 2 | --x = 1 | --- = 0",
+      "hl": false
+    },
+    {
+      "text": "Cada grupo de 3 bits puede tomar 2³ = 8 combinaciones (0 a 7). Los permisos de un archivo se expresan como 3 dígitos octales: uno por owner, uno por group, uno por others.",
+      "hl": false
+    },
+    {
+      "text": "**chmod en formato octal:** `chmod 754 archivo` → owner: rwx (7), group: r-x (5), others: r-- (4).",
+      "hl": true
+    },
+    {
+      "text": "**chmod en formato simbólico:** sintaxis `chmod [quién][operador][permiso] archivo`. Quién: `u` owner, `g` grupo, `o` otros, `a` todos. Operador: `+` añadir, `-` quitar, `=` establecer exacto.",
+      "hl": true
+    },
+    {
+      "text": "Ejemplos simbólicos: `chmod u+rw archivo` añade rw al owner. `chmod g-w archivo` quita w al grupo. `chmod a=rx archivo` establece r-x para todos.",
+      "hl": false
+    },
+    {
+      "text": "**chown:** cambia el propietario. `chown usuario archivo`. **chgrp:** cambia el grupo. `chgrp grupo archivo`. Root puede cambiar ambos en una sola línea: `chown usuario:grupo archivo`.",
+      "hl": false
+    }
+  ],
+  "resumen": "Los permisos en Linux controlan el acceso de lectura (r=4), escritura (w=2) y ejecución (x=1) para tres entidades: owner, group y others. Se representan como una cadena de 10 caracteres (tipo + 3 grupos de rwx) o como 3 dígitos octales (suma de bits por grupo). El comando chmod asigna permisos en formato octal (chmod 754 archivo) o simbólico (chmod u+rw, g-w, a=rx). chown y chgrp permiten cambiar el propietario y el grupo de un archivo respectivamente.",
+  "tags": [
+    "permisos",
+    "chmod",
+    "chown",
+    "chgrp",
+    "octal",
+    "simbolico",
+    "rwx",
+    "GNU/Linux",
+    "M6"
+  ],
+  "id": "3BMd0CYeSzuP4lgtTQFMj",
+  "fecha": "2026-05-03"
+}

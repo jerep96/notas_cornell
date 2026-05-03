@@ -1,0 +1,72 @@
+{
+  "titulo": "SUDO",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 5",
+  "tematicaDetectada": "SUDO, sudoers, privilegios, alias y configuración de permisos",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian",
+  "preguntas": [
+    "¿Qué es SUDO y cuál es su propósito?",
+    "¿Cuáles son las características principales de SUDO?",
+    "¿Qué es el archivo /etc/sudoers y cómo se edita de forma segura?",
+    "¿Qué configuran las directivas Defaults en sudoers?",
+    "¿Cómo se interpreta la sintaxis de permisos en sudoers?",
+    "¿Cómo se configuran privilegios por grupo en sudoers?",
+    "¿Para qué sirven los alias en sudoers?"
+  ],
+  "notas": [
+    {
+      "text": "**SUDO (Superuser DO)** permite ejecutar comandos con privilegios de administrador sin iniciar sesión como root. Agrega una capa de seguridad y control, siendo crucial para la administración segura del sistema.",
+      "hl": true
+    },
+    {
+      "text": "**Características de SUDO — Control de acceso:** permisos granulares; se asigna quién puede ejecutar qué comandos como root u otros usuarios.",
+      "hl": false
+    },
+    {
+      "text": "**Registro de actividad:** mantiene log de todos los comandos ejecutados vía SUDO, facilitando auditorías.",
+      "hl": false
+    },
+    {
+      "text": "**Temporalidad:** los permisos pueden ser temporales o específicos para usuarios, comandos o grupos. **Minimiza riesgos:** reduce accesos directos a root, minimizando errores o accesos indebidos.",
+      "hl": false
+    },
+    {
+      "text": "La configuración de SUDO se gestiona en **/etc/sudoers**. Para editarlo de forma segura se usa `visudo`, que verifica la sintaxis antes de guardar y evita configuraciones inválidas que bloqueen el sistema.",
+      "hl": true
+    },
+    {
+      "text": "**Directivas Defaults en sudoers:** `env_reset` restablece variables de entorno antes de ejecutar un comando. `mail_badpass` envía un correo al administrador ante contraseña incorrecta. `secure_path` define el PATH seguro para comandos ejecutados como superusuario. `timestamp_timeout` define minutos que se recuerda la contraseña (default: 5 min).",
+      "hl": false
+    },
+    {
+      "text": "**Sintaxis de permisos en sudoers:** `usuario MÁQUINAS = (USUARIO:GRUPO) COMANDOS`. Ejemplo: `alumno ALL=(ALL:ALL) ALL` → el usuario 'alumno' puede ejecutar cualquier comando, en cualquier máquina, como cualquier usuario y grupo.",
+      "hl": true
+    },
+    {
+      "text": "Desglose de `alumno ALL=(ALL:ALL) ALL`: 1er ALL = máquinas donde aplica la regla. (ALL:ALL) = como cualquier usuario : cualquier grupo. Último ALL = cualquier comando.",
+      "hl": false
+    },
+    {
+      "text": "**Privilegios por grupo:** se antepone `%` al nombre del grupo. Ejemplo: `%sudo ALL=(ALL:ALL) ALL` o `%Tecnologia ALL=(ALL:ALL) ALL`.",
+      "hl": true
+    },
+    {
+      "text": "**Alias en sudoers:** simplifican la configuración. `host_alias` agrupa hosts (ej: `SERVIDORES = server1, server2`). `user_alias` agrupa usuarios (ej: `ADMIN = alumno, jperez`). `cmnd_alias` agrupa comandos (ej: `REBOOT_CMDS = /sbin/reboot, /sbin/shutdown`).",
+      "hl": false
+    }
+  ],
+  "resumen": "SUDO permite a usuarios ejecutar comandos con privilegios de root sin acceder directamente a esa cuenta, mejorando la seguridad mediante control de acceso granular, registro de actividad y reducción del uso directo de root. Se configura en /etc/sudoers (editado siempre con visudo) donde se definen permisos con la sintaxis usuario MÁQUINAS=(USUARIO:GRUPO) COMANDOS. Los grupos se prefijan con %. Los alias permiten agrupar hosts, usuarios y comandos para simplificar la configuración. La directiva timestamp_timeout controla cuántos minutos se mantiene válida la autenticación.",
+  "tags": [
+    "sudo",
+    "sudoers",
+    "visudo",
+    "privilegios",
+    "root",
+    "seguridad",
+    "alias",
+    "permisos",
+    "M5"
+  ],
+  "id": "r16lmSqfnoyxFdaNmq6M3",
+  "fecha": "2026-05-03"
+}

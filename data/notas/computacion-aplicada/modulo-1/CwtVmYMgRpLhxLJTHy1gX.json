@@ -1,0 +1,57 @@
+{
+  "titulo": "Instalación de Debian 11 en VirtualBox",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 1",
+  "tematicaDetectada": "Descarga e instalación de GNU/Linux en máquina virtual",
+  "fuente": "APU 0306 — Descarga de Linux para la Instalación",
+  "preguntas": [
+    "¿Qué es una imagen ISO y por qué se usa para instalar sistemas operativos?",
+    "¿Qué arquitecturas soporta Debian 11 Bullseye?",
+    "¿Por qué se elige 'Install' en lugar de 'Graphical install' durante la instalación?",
+    "¿Qué esquema de partición se recomienda y por qué separar /home, /var y /tmp?",
+    "¿Qué diferencia hay entre el usuario root y el usuario estándar creado durante la instalación?",
+    "¿Qué es Pre-Allocate Full-Size y por qué se recomienda no activarlo?"
+  ],
+  "notas": [
+    {
+      "text": "**Debian 11 Bullseye** (versión recomendada por la cátedra) se instala desde una imagen **ISO** — archivo que emula un CD/DVD con el sistema de archivos completo.",
+      "hl": true
+    },
+    {
+      "text": "Arquitecturas soportadas: **i386, amd64, armel, armhf, arm64**. Para el curso se usan principalmente amd64 (Windows) y armhf (Mac M1).",
+      "hl": false
+    },
+    {
+      "text": "En VirtualBox se asignan **RAM** (mínimo 2 GB), **procesadores** y un **disco virtual** de 20 GB que solo consume espacio real a medida que se llena — no activar Pre-Allocate.",
+      "hl": false
+    },
+    {
+      "text": "Durante la instalación se eligen: idioma English, país Argentina, teclado **Latin American** (para que reconozca la Ñ), hostname y dominio vacío.",
+      "hl": false
+    },
+    {
+      "text": "Se crean dos cuentas: **root** (superusuario con privilegios totales) con contraseña simple como 'palermo', y un usuario estándar 'alumno' para uso cotidiano.",
+      "hl": false
+    },
+    {
+      "text": "El esquema de partición recomendado es **Separate /home, /var and /tmp** — separa datos de usuario y logs del sistema operativo base.",
+      "hl": false
+    },
+    {
+      "text": "Al finalizar se instala el gestor de arranque **GRUB** en /dev/sda y solo se deja tildado **Standard System Utilities** en la selección de software.",
+      "hl": false
+    }
+  ],
+  "resumen": "La instalación de Debian 11 en VirtualBox sigue un proceso guiado de 23 pasos: se descarga la ISO, se crea la VM con los recursos adecuados (2 GB RAM, 20 GB disco sin pre-alocar) y se configura el sistema eligiendo idioma, región, teclado Latin American, cuentas de usuario y esquema de partición separado. Al terminar, GRUB se instala como gestor de arranque y el sistema queda listo con utilidades estándar, sin entorno gráfico.",
+  "tags": [
+    "computacion-aplicada",
+    "modulo1",
+    "debian",
+    "instalacion",
+    "virtualbox",
+    "iso",
+    "particion"
+  ],
+  "id": "CwtVmYMgRpLhxLJTHy1gX",
+  "fecha": "2026-05-03"
+}

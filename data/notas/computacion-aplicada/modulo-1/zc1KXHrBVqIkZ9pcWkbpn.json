@@ -1,0 +1,52 @@
+{
+  "titulo": "Virtualización: Concepto, Componentes e Hipervisores",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 1",
+  "tematicaDetectada": "Virtualización y tipos de hipervisores",
+  "fuente": "APU 0306 — Virtualización",
+  "preguntas": [
+    "¿Qué es la virtualización y qué problema resuelve?",
+    "¿Qué es un hipervisor y cuál fue su origen histórico?",
+    "¿Qué diferencia concreta hay entre un hipervisor Tipo 1 y uno Tipo 2?",
+    "¿Qué extensiones de hardware habilitaron la virtualización moderna?",
+    "¿Qué significa escalar horizontal y verticalmente en un entorno virtualizado?"
+  ],
+  "notas": [
+    {
+      "text": "La **virtualización** permite ejecutar múltiples sistemas operativos en el mismo hardware físico creando máquinas virtuales (VM) que operan en un entorno simulado.",
+      "hl": true
+    },
+    {
+      "text": "El software de virtualización imita el hardware físico y convierte sus componentes (disco, red, CPU, video) en **recursos lógicos** accesibles para cada VM.",
+      "hl": false
+    },
+    {
+      "text": "Los **hipervisores** son los servidores que administran las VM; el concepto surge en los años 60-70 con el mainframe IBM S/360 Modelo 67.",
+      "hl": false
+    },
+    {
+      "text": "**Hipervisor Tipo 1 (BareMetal)**: corre directamente sobre el hardware sin SO anfitrión. Ejemplos: Proxmox VE, VMware ESXi, KVM, MS Hyper-V.",
+      "hl": false
+    },
+    {
+      "text": "**Hipervisor Tipo 2 (Hosted)**: corre sobre un SO convencional (Windows o GNU/Linux). Ejemplos: VirtualBox, VMware Workstation, UTM, QEMU.",
+      "hl": false
+    },
+    {
+      "text": "Las extensiones **IVT** (Intel) y **AMD-V** (AMD) en los microprocesadores hicieron posible la virtualización eficiente a partir de fines de los años 90 con VMware.",
+      "hl": false
+    }
+  ],
+  "resumen": "La virtualización permite aprovechar un único servidor físico para correr múltiples sistemas operativos de forma aislada, mediante un software llamado hipervisor. Existen dos tipos: el Tipo 1 o BareMetal opera directamente sobre el hardware (mayor rendimiento), mientras que el Tipo 2 u Hosted opera sobre un SO existente (más accesible para uso personal). Las extensiones de virtualización de Intel y AMD fueron clave para hacer esto eficiente en hardware moderno.",
+  "tags": [
+    "computacion-aplicada",
+    "modulo1",
+    "virtualizacion",
+    "hipervisor",
+    "tipo1",
+    "tipo2",
+    "virtualbox"
+  ],
+  "id": "zc1KXHrBVqIkZ9pcWkbpn",
+  "fecha": "2026-05-03"
+}

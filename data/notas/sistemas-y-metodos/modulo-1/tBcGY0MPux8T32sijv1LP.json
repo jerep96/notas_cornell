@@ -1,0 +1,42 @@
+{
+  "titulo": "La Organización que Aprende — Peter Senge",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 1",
+  "tematicaDetectada": "Learning organization y las cinco disciplinas del pensamiento sistémico",
+  "fuente": "APU 0177 — PPT La Organización (diapositiva 11)",
+  "preguntas": [
+    "¿Qué diferencia a una organización que aprende de una que solo se adapta al entorno?",
+    "¿Por qué el pensamiento sistémico es la 'quinta disciplina' y qué lo hace integrador?",
+    "¿Cuáles son las cinco disciplinas de Senge y qué aporta cada una?",
+    "¿Qué es la sinergia en el contexto del aprendizaje en equipo?"
+  ],
+  "notas": [
+    {
+      "text": "La **organización que aprende** (learning organization, Peter Senge) no solo se adapta al entorno: aprende a **crear su propio futuro** expandiendo continuamente la aptitud de sus miembros.",
+      "hl": true
+    },
+    {
+      "text": "**Pensamiento sistémico**: la quinta disciplina, integradora de todas las demás. Capacidad de ver la totalidad y las interrelaciones del sistema, en lugar de hechos aislados.",
+      "hl": false
+    },
+    {
+      "text": "**Dominio personal**: profundizar la visión personal y ver la realidad de forma objetiva. **Modelos mentales**: identificar los supuestos arraigados que guían nuestros actos y cuestionarlos.",
+      "hl": false
+    },
+    {
+      "text": "**Visión compartida**: pasar de 'mi visión' a 'nuestra visión', generando compromiso genuino en lugar de mero acatamiento. **Aprendizaje en equipo**: la inteligencia colectiva supera la individual (**sinergia**).",
+      "hl": false
+    }
+  ],
+  "resumen": "Peter Senge propone que las organizaciones más exitosas son aquellas que aprenden activamente, no solo que reaccionan al cambio. Para lograrlo, plantea cinco disciplinas: pensamiento sistémico (la integradora), dominio personal, modelos mentales, visión compartida y aprendizaje en equipo. La sinergia resultante hace que el equipo produzca resultados superiores a la suma de sus partes individuales.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo1",
+    "senge",
+    "learning-organization",
+    "pensamiento-sistemico",
+    "cinco-disciplinas"
+  ],
+  "id": "tBcGY0MPux8T32sijv1LP",
+  "fecha": "2026-05-03"
+}

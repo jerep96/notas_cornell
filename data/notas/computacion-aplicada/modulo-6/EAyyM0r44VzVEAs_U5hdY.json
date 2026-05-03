@@ -1,0 +1,64 @@
+{
+  "titulo": "Permisos especiales",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 6",
+  "tematicaDetectada": "SetUID, SetGID y StickyBit — bits especiales de permisos en Linux",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Pp. 107–119 (5.7–5.6)",
+  "preguntas": [
+    "¿Qué son los 3 bits de permisos especiales en Linux?",
+    "¿Qué hace SetUID y cómo se aplica?",
+    "¿Qué hace SetGID en archivos y en directorios?",
+    "¿Qué hace StickyBit y para qué se usa?",
+    "¿Cómo se aplica cada permiso especial en formato octal y simbólico?"
+  ],
+  "notas": [
+    {
+      "text": "Existen **3 bits de permisos especiales** en Linux que se aplican a archivos ejecutables o directorios para extender el comportamiento de los permisos estándar: **SetUID**, **SetGID** y **StickyBit**.",
+      "hl": true
+    },
+    {
+      "text": "**SetUID (SUID):** permite que un archivo ejecutable se ejecute con los permisos del **propietario del archivo** (no del usuario que lo ejecuta). Muy común en binarios del sistema como `passwd`. Octal: prefijo **4**. Simbólico: `u+s` (aparece como `s` en la posición x del owner).",
+      "hl": true
+    },
+    {
+      "text": "**SetGID (SGID):** en **archivos**, permite ejecutarlo con los permisos del **grupo propietario**. En **directorios**, todos los archivos creados dentro heredan automáticamente el grupo del directorio padre. Octal: prefijo **2**. Simbólico: `g+s` (aparece como `s` en la posición x del grupo).",
+      "hl": true
+    },
+    {
+      "text": "**StickyBit:** permite que **solo el propietario del archivo o root** pueda eliminarlo, aunque el directorio tenga permisos de escritura para todos. Muy usado en /tmp. Octal: prefijo **1**. Simbólico: `+t` (aparece como `t` en la posición x de others).",
+      "hl": true
+    },
+    {
+      "text": "**Tabla de comandos:**",
+      "hl": false
+    },
+    {
+      "text": "SetUID → `chmod 4755 archivo` / `chmod u+s archivo`",
+      "hl": false
+    },
+    {
+      "text": "SetGID → `chmod 2755 archivo` / `chmod g+s archivo`",
+      "hl": false
+    },
+    {
+      "text": "StickyBit → `chmod 1755 directorio` / `chmod +t directorio`",
+      "hl": false
+    },
+    {
+      "text": "En formato octal, el dígito especial se antepone a los 3 dígitos de permisos estándar. Ejemplo: `4755` = SetUID + rwxr-xr-x.",
+      "hl": false
+    }
+  ],
+  "resumen": "Los tres bits de permisos especiales amplían el control de acceso en Linux. SetUID hace que un ejecutable corra con los permisos de su propietario (octal: 4xxx, simbólico: u+s). SetGID hace lo mismo con el grupo en archivos, y en directorios hace que los archivos creados hereden el grupo del directorio (octal: 2xxx, simbólico: g+s). StickyBit protege archivos en directorios compartidos impidiendo que usuarios que no son propietarios los eliminen (octal: 1xxx, simbólico: +t). El dígito especial se antepone al permiso octal estándar.",
+  "tags": [
+    "SetUID",
+    "SetGID",
+    "StickyBit",
+    "permisos-especiales",
+    "chmod",
+    "GNU/Linux",
+    "M6"
+  ],
+  "id": "EAyyM0r44VzVEAs_U5hdY",
+  "fecha": "2026-05-03"
+}

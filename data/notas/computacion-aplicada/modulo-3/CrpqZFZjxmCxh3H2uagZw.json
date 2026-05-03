@@ -1,0 +1,76 @@
+{
+  "titulo": "Streams y filtros",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 3",
+  "tematicaDetectada": "Stdin, stdout, stderr y comandos de filtrado en Linux",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Primera Edición [Pág. 77–86]",
+  "preguntas": [
+    "¿Qué es un stream en Linux?",
+    "¿Cuáles son los 3 streams predefinidos y cómo se identifican?",
+    "¿Qué es stdin y de dónde recibe datos?",
+    "¿Qué es stdout y hacia dónde envía datos?",
+    "¿Qué es stderr y por qué se mantiene separado?",
+    "¿Para qué sirven los filtros y cuáles son los principales?",
+    "¿Qué hace grep y cuáles son sus opciones más usadas?"
+  ],
+  "notas": [
+    {
+      "text": "Un **stream** es un flujo de datos que puede ser de entrada (input) o de salida (output). Linux tiene 3 streams predefinidos que los programas usan para interactuar con el sistema.",
+      "hl": true
+    },
+    {
+      "text": "**stdin (Standard Input) — canal 0:** flujo de entrada; por defecto viene del teclado, pero puede recibir datos desde otro comando o desde un archivo.",
+      "hl": true
+    },
+    {
+      "text": "**stdout (Standard Output) — canal 1:** flujo de salida normal; por defecto se muestra en el monitor. Todo lo que un programa imprime o genera como resultado va aquí.",
+      "hl": true
+    },
+    {
+      "text": "**stderr (Standard Error) — canal 2:** flujo de errores. Se mantiene separado del stdout para que los errores no se mezclen con la salida normal del programa.",
+      "hl": true
+    },
+    {
+      "text": "El objetivo de los 3 streams es separar entrada, salida normal y errores para: redirigir stdout a archivos sin capturar errores, gestionar errores por separado, y automatizar procesos en scripts.",
+      "hl": false
+    },
+    {
+      "text": "Los **filtros** son comandos que procesan el contenido de un archivo o stdin y manipulan la salida (stdout).",
+      "hl": false
+    },
+    {
+      "text": "**tail:** muestra las últimas 10 líneas de un archivo. `-f` sigue mostrando nuevas líneas en tiempo real (útil para logs). `-n xx` define la cantidad de líneas.",
+      "hl": false
+    },
+    {
+      "text": "**more:** pagina archivos grandes hacia adelante solamente. **less:** igual que more pero permite navegar también hacia atrás.",
+      "hl": false
+    },
+    {
+      "text": "**sort:** ordena líneas alfabética o numéricamente. `-r` en reversa. `-n` numérico. **wc:** cuenta líneas (`-l`), palabras (`-w`) o caracteres (`-m`). **cut:** extrae partes específicas de cada línea.",
+      "hl": false
+    },
+    {
+      "text": "**grep:** busca dentro de archivos o stdout palabras que coincidan con un patrón o expresión regular. Sintaxis: `grep [opción] [patrón] [archivo]`.",
+      "hl": true
+    },
+    {
+      "text": "Opciones de grep: `-i` ignora mayúsculas/minúsculas | `-n` muestra número de línea | `-r` busca recursivamente en directorios | `-c` cuenta líneas coincidentes | `-E` busca múltiples patrones.",
+      "hl": false
+    }
+  ],
+  "resumen": "Los streams son flujos de datos predefinidos en Linux: stdin (0) recibe la entrada, stdout (1) envía la salida normal y stderr (2) envía los errores por separado. Esta separación permite redirigir y gestionar los datos de forma independiente. Los filtros como grep, tail, sort, wc y cut procesan el contenido de archivos o del stdin para manipular y analizar la salida de forma eficiente, siendo especialmente útiles combinados con pipes.",
+  "tags": [
+    "streams",
+    "stdin",
+    "stdout",
+    "stderr",
+    "filtros",
+    "grep",
+    "tail",
+    "GNU/Linux",
+    "M3"
+  ],
+  "id": "CrpqZFZjxmCxh3H2uagZw",
+  "fecha": "2026-05-03"
+}

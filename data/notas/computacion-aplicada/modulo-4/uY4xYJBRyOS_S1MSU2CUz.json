@@ -1,0 +1,84 @@
+{
+  "titulo": "DNS y DHCP",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 4",
+  "tematicaDetectada": "Sistema de nombres de dominio, tipos de registros DNS y protocolo DHCP",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Pág. 183–208 (9.13.3)",
+  "preguntas": [
+    "¿Qué es el DNS y cuál es su función?",
+    "¿Cómo se organiza la jerarquía de un nombre de dominio?",
+    "¿Cuál es el proceso completo de resolución DNS al escribir una URL?",
+    "¿Qué tipos de servidores DNS participan en la resolución?",
+    "¿Qué tipos de registros DNS existen?",
+    "¿Qué es DHCP y qué información puede asignar?",
+    "¿Cuáles son las 4 fases del protocolo DHCP (DORA)?"
+  ],
+  "notas": [
+    {
+      "text": "El **DNS (Domain Name System)** traduce nombres de dominio legibles por humanos (ej: www.google.com) en direcciones IP (ej: 192.168.1.1) que los dispositivos usan para comunicarse. Sin DNS habría que memorizar IPs.",
+      "hl": true
+    },
+    {
+      "text": "**Jerarquía de dominios** — Ejemplo: `mail.ejemplo.com`: **.com** es el TLD (Top Level Domain); **ejemplo** es el dominio secundario; **mail** es el subdominio.",
+      "hl": false
+    },
+    {
+      "text": "**Proceso de resolución DNS:** 1) El cliente revisa su caché local. 2) Si no hay respuesta, consulta al **Servidor DNS Recursivo**. 3) El Recursivo pregunta al **Servidor Raíz (Root DNS)**. 4) El Root redirige a los **Servidores TLD**. 5) El TLD redirige al **Servidor DNS Autoritativo**. 6) El Autoritativo devuelve la IP definitiva al Recursivo. 7) El Recursivo responde al cliente y guarda el resultado en caché.",
+      "hl": true
+    },
+    {
+      "text": "**Servidor DNS Recursivo:** recibe la consulta del cliente y recorre la jerarquía DNS hasta obtener la respuesta.",
+      "hl": false
+    },
+    {
+      "text": "**Servidor Raíz (Root DNS):** primer escalón de la jerarquía; si no conoce la respuesta, deriva al servidor TLD correspondiente.",
+      "hl": false
+    },
+    {
+      "text": "**Servidores TLD:** gestionan dominios como .com, .net, .org, .edu y cc-TLD (.ar, .mx, .es). Si no tienen la respuesta, derivan al Autoritativo.",
+      "hl": false
+    },
+    {
+      "text": "**Servidor DNS Autoritativo:** entidad máxima; tiene el registro definitivo de la IP para ese dominio. Si no existe registro, devuelve error.",
+      "hl": false
+    },
+    {
+      "text": "**Tipos de registros DNS — A:** dominio → IPv4. **AAAA:** dominio → IPv6. **CNAME:** dominio → otro dominio. **MX:** servidores de correo del dominio. **NS:** servidores DNS autorizados del dominio. **TXT:** texto para verificaciones o políticas de seguridad (ej: SPF, DKIM).",
+      "hl": true
+    },
+    {
+      "text": "El **DHCP (Dynamic Host Configuration Protocol)** asigna automáticamente direcciones IP y parámetros de red (máscara, gateway, DNS, tiempo de alquiler) a los dispositivos al conectarse.",
+      "hl": true
+    },
+    {
+      "text": "**Fase 1 — DISCOVER:** el cliente sin IP envía un broadcast a toda la red buscando un servidor DHCP.",
+      "hl": false
+    },
+    {
+      "text": "**Fase 2 — OFFER:** el servidor DHCP responde con una IP disponible, máscara, gateway, DNS y tiempo de alquiler.",
+      "hl": false
+    },
+    {
+      "text": "**Fase 3 — REQUEST:** el cliente acepta la oferta y responde en broadcast (para notificar a otros servidores DHCP posibles).",
+      "hl": false
+    },
+    {
+      "text": "**Fase 4 — ACK:** el servidor confirma la asignación con un mensaje DHCP ACK (Acknowledgement). El cliente ya puede usar la IP. Si el servidor rechaza: **NAK**. Al liberar la IP: **RELEASE**.",
+      "hl": false
+    }
+  ],
+  "resumen": "El DNS traduce nombres de dominio a direcciones IP mediante una jerarquía de servidores: Recursivo → Raíz → TLD → Autoritativo, con caché en cada paso para optimizar consultas futuras. Los registros DNS definen distintos tipos de asociaciones: A (IPv4), AAAA (IPv6), CNAME (alias), MX (correo), NS (nameservers) y TXT (verificaciones). El DHCP automatiza la asignación de configuración de red siguiendo 4 fases conocidas como DORA: Discover, Offer, Request y ACK.",
+  "tags": [
+    "DNS",
+    "DHCP",
+    "dominio",
+    "TLD",
+    "registros-DNS",
+    "DORA",
+    "resolucion-DNS",
+    "redes",
+    "M4"
+  ],
+  "id": "uY4xYJBRyOS_S1MSU2CUz",
+  "fecha": "2026-05-03"
+}

@@ -1,0 +1,48 @@
+{
+  "titulo": "Tipos de Estructura Organizacional",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 1",
+  "tematicaDetectada": "Estructuras lineal, funcional, por producto/mercado y matricial",
+  "fuente": "APU 0177 — La Organización Tipos de Estructura / PPT La Organización / Tipos de Organización",
+  "preguntas": [
+    "¿Cuáles son los cuatro tipos de estructura organizacional y en qué se diferencia cada uno?",
+    "¿Por qué la estructura lineal es también llamada piramidal?",
+    "¿Qué problema generan los 'silos' en una estructura funcional?",
+    "¿Qué es el sistema de mando múltiple y en qué tipo de estructura aparece?",
+    "¿Cuándo conviene aplicar la estructura matricial y cuál es su principal desventaja?"
+  ],
+  "notas": [
+    {
+      "text": "Existen **cuatro tipos de estructura**: lineal (piramidal), funcional, por producto/mercado (divisional) y matricial. La elección depende de la estrategia, el personal, la tecnología y las tareas.",
+      "hl": true
+    },
+    {
+      "text": "**Lineal**: autoridad directa de arriba hacia abajo, sin tramos administrativos complejos. Simple y rápida en la toma de decisiones, pero rígida. Ideal para empresas pequeñas.",
+      "hl": false
+    },
+    {
+      "text": "**Funcional**: personas agrupadas por área de especialización (Finanzas, Marketing, RRHH, etc.). Eficiente dentro de cada función pero puede crear 'silos' que dificultan la comunicación interdepartamental.",
+      "hl": false
+    },
+    {
+      "text": "**Por producto/mercado (divisional)**: cada división opera casi como empresa independiente, enfocada en un producto, cliente o región. Mayor adaptabilidad, pero implica duplicación de recursos.",
+      "hl": false
+    },
+    {
+      "text": "**Matricial**: combina la estructura funcional y la de producto/proyecto. Cada empleado responde a dos jefes (gerente funcional y gerente de proyecto) — es un **sistema de mando múltiple**. Flexible pero con riesgo de conflicto de autoridad.",
+      "hl": false
+    }
+  ],
+  "resumen": "Los cuatro tipos de estructura organizacional representan distintos enfoques para dividir, agrupar y coordinar el trabajo. La lineal es la más simple; la funcional maximiza la especialización; la divisional permite autonomía por línea de negocio; y la matricial, la más compleja, combina dimensiones funcionales y de proyecto bajo un sistema de mando doble. La elección del tipo adecuado es clave para que la empresa pueda ejecutar su estrategia eficientemente.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo1",
+    "estructura-lineal",
+    "funcional",
+    "divisional",
+    "matricial",
+    "tipos-de-estructura"
+  ],
+  "id": "xC-o_RITTi1RIFA2mJPMI",
+  "fecha": "2026-05-03"
+}

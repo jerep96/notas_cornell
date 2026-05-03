@@ -1,0 +1,73 @@
+{
+  "titulo": "SSH — Secure Shell",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 4",
+  "tematicaDetectada": "Protocolo SSH, configuración, autenticación por contraseña y por clave pública/privada",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Pp. 183–208 (9.13.3)",
+  "preguntas": [
+    "¿Qué es SSH y para qué se usa?",
+    "¿Qué diferencia hay entre cliente SSH y servidor SSH?",
+    "¿Cómo se instala y dónde se configura el servidor SSH en Debian?",
+    "¿Qué parámetros importantes tiene sshd_config?",
+    "¿Cuáles son las formas de usar el comando ssh?",
+    "¿Cómo funciona la conexión SSH paso a paso?",
+    "¿Qué diferencia hay entre autenticación por contraseña y por clave pública/privada?",
+    "¿Cómo se generan y copian las claves SSH?"
+  ],
+  "notas": [
+    {
+      "text": "**SSH (Secure Shell)** es un protocolo y programa que permite acceder y administrar servidores remotos de forma segura mediante un intérprete de comandos. También permite copiar datos de forma segura y tunelizar otras aplicaciones.",
+      "hl": true
+    },
+    {
+      "text": "**Cliente SSH:** equipo desde el que se inicia la conexión remota. **Servidor SSH:** equipo al que se conecta el cliente. El cliente suele estar preinstalado; el servidor requiere instalar `openssh-server`: `apt-get install openssh-server`.",
+      "hl": false
+    },
+    {
+      "text": "Los archivos de configuración están en `/etc/ssh`. Hay 2 archivos: **sshd_config** (configuración del servidor) y **ssh_config** (configuración del cliente).",
+      "hl": true
+    },
+    {
+      "text": "**Parámetros clave de sshd_config:** `port` puerto TCP usado (default 22, recomendable cambiarlo por seguridad). `PubkeyAuthentication` autenticación por clave privada. `AuthorizedKeysFile` ruta de las claves públicas autorizadas (default: ~/.ssh/authorized_keys). `PasswordAuthentication` autenticación por contraseña. `PermitRootLogin` acceso de root (default: Prohibit-password).",
+      "hl": false
+    },
+    {
+      "text": "**Formas de uso:** `ssh <host>` conecta con el mismo usuario activo. `ssh <usuario@host>` conecta con el usuario especificado. Para desconectarse: `exit`.",
+      "hl": false
+    },
+    {
+      "text": "**Conexión SSH paso a paso:** 1) cliente se conecta al puerto 22. 2) servidor envía su clave pública. 3) cliente verifica si ya la conoce (si no, pide confirmación). 4) cliente genera clave de sesión, la cifra con la clave pública del servidor y la envía. 5) cliente se autentica (contraseña o clave). 6) sesión segura establecida.",
+      "hl": true
+    },
+    {
+      "text": "**Autenticación por contraseña:** método básico. El cliente envía usuario y contraseña cifrada; el servidor verifica. Vulnerable a fuerza bruta.",
+      "hl": false
+    },
+    {
+      "text": "**Autenticación por clave pública/privada:** método más seguro y recomendado. El cliente tiene un par de claves: **clave privada** (nunca se comparte, queda en el cliente) y **clave pública** (se copia al servidor en `~/.ssh/authorized_keys`). Durante la conexión, el servidor cifra un desafío con la clave pública y el cliente lo descifra con su privada; si es correcto, se autentica sin contraseña.",
+      "hl": true
+    },
+    {
+      "text": "**Generación de claves:** `ssh-keygen` genera el par. Por defecto se guardan en `~/.ssh/`: `id_rsa` (privada — NO compartir) y `id_rsa.pub` (pública — compartir con el servidor).",
+      "hl": false
+    },
+    {
+      "text": "**Copia de clave pública al servidor:** `ssh-copy-id usuario@servidor_remoto`. El comando copia la clave pública al archivo `authorized_keys` del servidor. Requiere contraseña por única vez; las conexiones posteriores no la pedirán.",
+      "hl": false
+    }
+  ],
+  "resumen": "SSH es un protocolo de acceso remoto seguro que cifra toda la comunicación entre cliente y servidor. El servidor requiere instalar openssh-server y se configura en /etc/ssh/sshd_config, donde se definen puerto, métodos de autenticación y permisos de root. La autenticación puede ser por contraseña (simple pero vulnerable) o por par de claves pública/privada (recomendada): se genera el par con ssh-keygen, se copia la clave pública al servidor con ssh-copy-id, y a partir de entonces la conexión no requiere contraseña.",
+  "tags": [
+    "SSH",
+    "openssh",
+    "clave-publica",
+    "clave-privada",
+    "ssh-keygen",
+    "ssh-copy-id",
+    "autenticacion",
+    "redes",
+    "M4"
+  ],
+  "id": "p-vQzXX34o2Y3Rwfg-0HP",
+  "fecha": "2026-05-03"
+}

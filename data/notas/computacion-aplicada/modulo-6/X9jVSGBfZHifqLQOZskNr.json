@@ -1,0 +1,61 @@
+{
+  "titulo": "Umask",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 6",
+  "tematicaDetectada": "Umask: permisos predeterminados, cálculo por resta y operación binaria, configuración permanente",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Pp. 107–119 (5.7–5.6)",
+  "preguntas": [
+    "¿Qué es umask y para qué sirve?",
+    "¿Cuáles son los permisos predeterminados para archivos y directorios?",
+    "¿Cómo se calcula el valor de umask mediante resta?",
+    "¿Cómo se calcula el valor de umask mediante operación binaria (NOT + AND)?",
+    "¿Cómo se aplica umask de forma temporal vs permanente?",
+    "¿Dónde se configura umask para un usuario específico o para todo el sistema?"
+  ],
+  "notas": [
+    {
+      "text": "**Umask** es un mecanismo que define los permisos predeterminados para archivos y directorios nuevos. Actúa como un **filtro que resta permisos** del valor máximo predeterminado.",
+      "hl": true
+    },
+    {
+      "text": "Valores predeterminados máximos: **archivos = 666** (rw-rw-rw-), **directorios = 777** (rwxrwxrwx). Los archivos nunca tienen x por defecto.",
+      "hl": true
+    },
+    {
+      "text": "**Cálculo por resta:** umask = valor predeterminado − permisos deseados. Ejemplo: quiero archivos con 644 → 666 - 644 = **022** → `umask 0022` → resultado: -rw-r--r--",
+      "hl": true
+    },
+    {
+      "text": "**Cálculo por operación binaria (más preciso):** 1) Convertir el predeterminado a binario: 666 = 110 110 110. 2) Convertir el permiso deseado a binario y aplicar NOT (invertir bits): 644 = 110 100 100 → NOT = 001 011 011. 3) Aplicar AND bit a bit entre el predeterminado y el NOT: 110 110 110 AND 001 011 011 = 000 010 010 → resultado en octal: **022**.",
+      "hl": false
+    },
+    {
+      "text": "**NOT Binary:** invierte cada bit (0→1, 1→0). **AND bit a bit:** resultado es 1 solo si ambos bits son 1; en cualquier otro caso es 0.",
+      "hl": false
+    },
+    {
+      "text": "**Umask temporal:** ejecutar `umask 0022` directamente en la terminal aplica solo para la sesión activa actual.",
+      "hl": false
+    },
+    {
+      "text": "**Umask permanente para un usuario:** agregar `umask 0022` en `~/.bashrc` o `~/.profile` del usuario.",
+      "hl": false
+    },
+    {
+      "text": "**Umask permanente global (todos los usuarios):** configurar en `/etc/profile` o `/etc/login.defs`.",
+      "hl": true
+    }
+  ],
+  "resumen": "Umask define los permisos que se restan a los valores predeterminados (666 para archivos, 777 para directorios) al crear nuevos archivos o directorios. Se calcula como la diferencia entre el predeterminado y el permiso deseado, o más rigurosamente mediante NOT binario del permiso deseado seguido de AND bit a bit con el predeterminado. Ejecutado directamente en terminal es temporal (solo para la sesión); para hacerlo permanente por usuario se configura en ~/.bashrc o ~/.profile, y para todo el sistema en /etc/profile o /etc/login.defs.",
+  "tags": [
+    "umask",
+    "permisos-predeterminados",
+    "NOT-binario",
+    "AND-binario",
+    "octal",
+    "GNU/Linux",
+    "M6"
+  ],
+  "id": "X9jVSGBfZHifqLQOZskNr",
+  "fecha": "2026-05-03"
+}

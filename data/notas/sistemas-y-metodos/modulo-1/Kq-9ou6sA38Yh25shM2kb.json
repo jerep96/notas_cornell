@@ -1,0 +1,54 @@
+{
+  "titulo": "La Organización: Entorno, Estructura y Conceptos Clave",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 1",
+  "tematicaDetectada": "Organización, entorno, eficiencia, eficacia, estructura y diseño organizacional",
+  "fuente": "APU 0177 — PPT La Organización / Tipos de Organización",
+  "preguntas": [
+    "¿Cuál es la diferencia entre eficiencia y eficacia, y por qué importa distinguirlas?",
+    "¿Qué diferencia hay entre microambiente y macroambiente de una organización?",
+    "¿Cuáles son las cinco fuerzas de Porter y qué analiza cada una?",
+    "¿Qué es el diseño organizacional y qué lo diferencia de la estructura organizacional?",
+    "¿Qué conceptos integran la estructura organizacional según la materia (división, coordinación, departamentalización, jerarquía)?",
+    "¿Qué es la administración y cuáles son sus cuatro actividades básicas?"
+  ],
+  "notas": [
+    {
+      "text": "**Eficiencia** = hacer al menor costo (minimizar recursos). **Eficacia** = hacer lo que se debe hacer (alcanzar los objetivos correctos). El éxito organizacional requiere ambas simultáneamente.",
+      "hl": true
+    },
+    {
+      "text": "El **entorno** se divide en **microambiente** (clientes, proveedores, competencia — la empresa puede actuar) y **macroambiente** (leyes, economía, cultura — la empresa solo debe cumplirlas).",
+      "hl": false
+    },
+    {
+      "text": "Las **cinco fuerzas de Porter** son: competidores tradicionales, nuevos participantes, productos sustitutos, proveedores y clientes. Determinan la rentabilidad e intensidad competitiva del sector.",
+      "hl": false
+    },
+    {
+      "text": "**División del trabajo**: descomponer tareas complejas en subtareas (base del ejemplo de Adam Smith con alfileres y la línea de montaje de Ford). **Departamentalización**: agrupar tareas afines en unidades con objetivos comunes.",
+      "hl": false
+    },
+    {
+      "text": "**Jerarquía**: niveles de autoridad y responsabilidad para guiar los objetivos macro. **Coordinación**: integrar las actividades de distintas áreas para lograr metas de forma eficaz y eficiente.",
+      "hl": false
+    },
+    {
+      "text": "La **administración** comprende cuatro actividades básicas: planificar, organizar, dirigir y controlar. El **gerente** es quien dirige estas actividades para alcanzar las metas organizacionales.",
+      "hl": false
+    }
+  ],
+  "resumen": "Una organización es un sistema social de dos o más personas que trabajan de forma estructurada para alcanzar metas. Opera inmersa en un entorno de dos niveles (micro y macro) que pueden alterar sus objetivos. La administración da forma a esa organización a través de cuatro funciones (planificar, organizar, dirigir y controlar), y su desempeño se mide con dos métricas complementarias: eficiencia (menor costo) y eficacia (objetivos correctos). El diseño organizacional define cómo se divide, agrupa y coordina el trabajo mediante la estructura.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo1",
+    "organizacion",
+    "entorno",
+    "porter",
+    "eficiencia",
+    "eficacia",
+    "estructura"
+  ],
+  "id": "Kq-9ou6sA38Yh25shM2kb",
+  "fecha": "2026-05-03"
+}
