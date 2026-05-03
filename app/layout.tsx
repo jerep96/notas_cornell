@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, IBM_Plex_Mono, Source_Serif_4 } from 'next/font/google'
-import StoreHydration from '@/components/StoreHydration'
 import './globals.css'
 
 const playfair = Playfair_Display({
@@ -33,7 +32,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${playfair.variable} ${ibmPlexMono.variable} ${sourceSerif.variable}`}>
-        <StoreHydration />
         {children}
       </body>
     </html>

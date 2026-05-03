@@ -1,26 +1,28 @@
 'use client'
 
-import { useStore } from '@/lib/store'
 import { useRouter } from 'next/navigation'
 import { useIsLocal } from '@/lib/useIsLocal'
 
 interface TopbarProps {
-  onMenuClick: () => void
+  onMenuClick?: () => void
   onIngestClick: () => void
+  searchQuery?: string
+  onSearchChange?: (q: string) => void
 }
 
-export default function Topbar({ onMenuClick, onIngestClick }: TopbarProps) {
-  const { searchQuery, setSearch } = useStore()
+export default function Topbar({ onMenuClick, onIngestClick, searchQuery, onSearchChange }: TopbarProps) {
   const router = useRouter()
   const isLocal = useIsLocal()
 
   return (
     <header className="topbar">
-      <button className="btn-ghost" onClick={onMenuClick} aria-label="Menú" style={{ display: 'flex' }}>
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-          <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        </svg>
-      </button>
+      {onMenuClick && (
+        <button className="btn-ghost" onClick={onMenuClick} aria-label="Menú" style={{ display: 'flex' }}>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        </button>
+      )}
 
       <button
         onClick={() => router.push('/notas')}
@@ -39,14 +41,16 @@ export default function Topbar({ onMenuClick, onIngestClick }: TopbarProps) {
         Cuaderno Cornell
       </button>
 
-      <input
-        type="search"
-        className="search-input"
-        placeholder="Buscar notas…"
-        value={searchQuery}
-        onChange={(e) => setSearch(e.target.value)}
-        style={{ flex: 1, maxWidth: '400px' }}
-      />
+      {onSearchChange !== undefined && (
+        <input
+          type="search"
+          className="search-input"
+          placeholder="Buscar notas…"
+          value={searchQuery ?? ''}
+          onChange={(e) => onSearchChange(e.target.value)}
+          style={{ flex: 1, maxWidth: '400px' }}
+        />
+      )}
 
       {isLocal && (
         <div style={{ marginLeft: 'auto' }}>

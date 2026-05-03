@@ -2,9 +2,6 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { useStore } from '@/lib/store'
-import { NotaGenerada } from '@/lib/types'
-import { nanoid } from 'nanoid'
 
 interface IngestPanelProps {
   onClose: () => void
@@ -13,10 +10,10 @@ interface IngestPanelProps {
 export default function IngestPanel({ onClose }: IngestPanelProps) {
   const [jsonText, setJsonText] = useState('')
   const [error, setError] = useState('')
-  const { addNota } = useStore()
+  const [loading, setLoading] = useState(false)
   const router = useRouter()
 
-  function handleImport() {
+  async function handleImport() {
     setError('')
 
     let parsed: unknown
@@ -43,25 +40,26 @@ export default function IngestPanel({ onClose }: IngestPanelProps) {
       }
     }
 
-    const today = new Date().toISOString().split('T')[0]
-    const notas: NotaGenerada[] = items.map((obj) => ({
-      id: nanoid(),
-      titulo: obj.titulo as string,
-      fecha: typeof obj.fecha === 'string' ? obj.fecha : today,
-      fuente: typeof obj.fuente === 'string' ? obj.fuente : '',
-      preguntas: Array.isArray(obj.preguntas) ? (obj.preguntas as string[]) : [],
-      notas: Array.isArray(obj.notas) ? (obj.notas as { text: string; hl: boolean }[]) : [],
-      resumen: obj.resumen as string,
-      tags: Array.isArray(obj.tags) ? (obj.tags as string[]) : [],
-      materiaDetectada: typeof obj.materiaDetectada === 'string' ? obj.materiaDetectada : 'General',
-      moduloDetectado: typeof obj.moduloDetectado === 'string' ? obj.moduloDetectado : 'Módulo 1',
-      tematicaDetectada: typeof obj.tematicaDetectada === 'string' ? obj.tematicaDetectada : 'General',
-      confirmada: true,
-    }))
-
-    for (const nota of notas) addNota(nota)
-    onClose()
-    router.push(`/notas/${notas[0].id}`)
+    setLoading(true)
+    try {
+      const res = await fetch('/api/save-nota', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(items),
+      })
+      const data = await res.json() as { ok?: boolean; ids?: string[]; error?: string }
+      if (!data.ok) {
+        setError(data.error || 'Error al guardar')
+        setLoading(false)
+        return
+      }
+      onClose()
+      router.push(`/notas/${data.ids![0]}`)
+      router.refresh()
+    } catch {
+      setError('Error de red al guardar')
+      setLoading(false)
+    }
   }
 
   return (
@@ -70,7 +68,6 @@ export default function IngestPanel({ onClose }: IngestPanelProps) {
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
       <div className="ingest-panel">
-        {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
           <h2 style={{ margin: 0, fontSize: '1.2rem', fontFamily: 'var(--font-playfair)' }}>
             Importar apunte
@@ -83,7 +80,10 @@ export default function IngestPanel({ onClose }: IngestPanelProps) {
         </div>
 
         <p style={{ fontSize: '0.85rem', color: 'var(--ink-3)', marginBottom: '0.75rem', lineHeight: 1.5 }}>
-          Pegá un objeto JSON o un array de objetos. Campos obligatorios por nota: <span style={{ fontFamily: 'var(--font-ibm-plex)', color: 'var(--ink-2)' }}>titulo</span>, <span style={{ fontFamily: 'var(--font-ibm-plex)', color: 'var(--ink-2)' }}>notas</span>, <span style={{ fontFamily: 'var(--font-ibm-plex)', color: 'var(--ink-2)' }}>resumen</span>.
+          Pegá un objeto JSON o un array de objetos. Campos obligatorios por nota:{' '}
+          <span style={{ fontFamily: 'var(--font-ibm-plex)', color: 'var(--ink-2)' }}>titulo</span>,{' '}
+          <span style={{ fontFamily: 'var(--font-ibm-plex)', color: 'var(--ink-2)' }}>notas</span>,{' '}
+          <span style={{ fontFamily: 'var(--font-ibm-plex)', color: 'var(--ink-2)' }}>resumen</span>.
         </p>
 
         <textarea
@@ -120,14 +120,14 @@ export default function IngestPanel({ onClose }: IngestPanelProps) {
         )}
 
         <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.75rem', marginTop: '1.25rem' }}>
-          <button className="btn-secondary" onClick={onClose}>Cancelar</button>
+          <button className="btn-secondary" onClick={onClose} disabled={loading}>Cancelar</button>
           <button
             className="btn-primary"
             onClick={handleImport}
-            disabled={!jsonText.trim()}
-            style={{ opacity: jsonText.trim() ? 1 : 0.5 }}
+            disabled={!jsonText.trim() || loading}
+            style={{ opacity: jsonText.trim() && !loading ? 1 : 0.5 }}
           >
-            Importar
+            {loading ? 'Guardando…' : 'Importar'}
           </button>
         </div>
       </div>

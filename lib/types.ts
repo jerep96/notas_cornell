@@ -9,27 +9,12 @@ export interface Nota {
   tags: string[]
 }
 
-export interface Tematica { id: string; nombre: string; notas: Nota[] }
-export interface Modulo   { id: string; nombre: string; tematicas: Tematica[] }
-export interface Materia  { id: string; nombre: string; color: string; modulos: Modulo[] }
-
-export interface NotaGenerada extends Nota {
-  materiaDetectada:  string
-  moduloDetectado:   string
+export interface NotaArchivo extends Nota {
+  materiaDetectada: string
+  moduloDetectado: string
   tematicaDetectada: string
-  confirmada: boolean
 }
 
-export interface AppStore {
-  materias: Materia[]
-  selectedMateriaId: string | null
-  selectedModuloId: string | null
-  selectedTematicaId: string | null
-  searchQuery: string
-  notasPendientes: NotaGenerada[]
-  addNota: (nota: NotaGenerada) => void
-  dismissPendiente: (id: string) => void
-  setSearch: (q: string) => void
-  setSelection: (matId: string | null, modId: string | null, temId: string | null) => void
-  getContextNotas: () => Nota[]
-}
+export interface TematicaNode { nombre: string; notas: NotaArchivo[] }
+export interface ModuloNode   { nombre: string; tematicas: TematicaNode[] }
+export interface MateriaNode  { nombre: string; color: string; modulos: ModuloNode[] }

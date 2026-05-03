@@ -314,6 +314,20 @@ code, pre, .mono {
   color: var(--ink-2);
 }
 
+/* ── NoteCard modulo label ── */
+.nc-modulo {
+  font-family: var(--font-ibm-plex), monospace;
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+  background: var(--paper-3);
+  border-radius: 2px;
+  padding: 2px 6px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
 /* ── Tags row ── */
 .tags-row {
   display: flex;
