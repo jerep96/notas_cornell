@@ -1,0 +1,89 @@
+{
+  "titulo": "Comandos",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 2",
+  "tematicaDetectada": "Sintaxis y comandos esenciales de la terminal Linux",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Primera Edición [Pág. 47–63]",
+  "preguntas": [
+    "¿Cuál es la sintaxis general de un comando en Linux?",
+    "¿Qué significa que Linux sea case-sensitive?",
+    "¿Cómo navegar el filesystem desde la terminal?",
+    "¿Cómo crear, copiar, mover y eliminar archivos?",
+    "¿Cómo crear y eliminar directorios?",
+    "¿Cómo obtener ayuda sobre un comando?",
+    "¿Cómo apagar o reiniciar el sistema desde la terminal?"
+  ],
+  "notas": [
+    {
+      "text": "**Sintaxis general:** `$ comando [opciones] [argumentos]`. Las opciones modifican el comportamiento (ej: `-l`); el argumento es el objeto sobre el que actúa (ej: `/var`).",
+      "hl": true
+    },
+    {
+      "text": "Linux tiene **autocompletado con Tab**: escribir parte de un comando y presionar Tab lo completa automáticamente.",
+      "hl": false
+    },
+    {
+      "text": "Linux es **case-sensitive**: `ls` ≠ `LS`. `ARCHIVO`, `Archivo` y `archivo` son objetos distintos. Usar mayúsculas incorrectamente produce error.",
+      "hl": true
+    },
+    {
+      "text": "**Navegación — pwd:** muestra el directorio actual de trabajo.",
+      "hl": false
+    },
+    {
+      "text": "**ls:** lista el contenido de un directorio. Opciones: `-l` detalles, `-a` archivos ocultos, `-t` orden por fecha, `-r` orden inverso, `-h` tamaños legibles.",
+      "hl": false
+    },
+    {
+      "text": "**cd /ruta:** cambia al directorio indicado. **cd ..:** sube un nivel en la jerarquía.",
+      "hl": false
+    },
+    {
+      "text": "**touch archivo.txt:** crea un archivo vacío.",
+      "hl": false
+    },
+    {
+      "text": "**cp [-r] [-v] origen destino:** copia archivos o directorios. `-r` copia recursiva para directorios; `-v` muestra lo que se está copiando.",
+      "hl": false
+    },
+    {
+      "text": "**mv origen destino:** mueve o renombra archivos y directorios.",
+      "hl": false
+    },
+    {
+      "text": "**rm [-r] [-f] archivo:** elimina archivos. `-r` recursivo para directorios; `-f` fuerza la eliminación sin confirmación. `rm -rf /directorio` es irreversible.",
+      "hl": true
+    },
+    {
+      "text": "**cat archivo:** muestra el contenido de un archivo en la terminal.",
+      "hl": false
+    },
+    {
+      "text": "**mkdir nombre:** crea un directorio. `mkdir -p d1/d2/d3` crea estructura anidada completa.",
+      "hl": false
+    },
+    {
+      "text": "**rmdir nombre:** elimina un directorio solo si está vacío.",
+      "hl": false
+    },
+    {
+      "text": "**man comando:** muestra el manual completo del comando. **whatis comando:** descripción breve. **whereis comando:** ubicación del binario.",
+      "hl": false
+    },
+    {
+      "text": "**logout:** cierra la sesión actual. **shutdown -r now:** reinicia el sistema. **shutdown -h now:** apaga el sistema.",
+      "hl": false
+    }
+  ],
+  "resumen": "Un comando Linux sigue la estructura `comando [opciones] [argumentos]`. El sistema es case-sensitive, por lo que mayúsculas y minúsculas producen resultados distintos. Los comandos esenciales cubren navegación (cd, ls, pwd), gestión de archivos (touch, cp, mv, rm, cat) y directorios (mkdir, rmdir), y administración del sistema (man, shutdown). El autocompletado con Tab acelera el trabajo en la terminal.",
+  "tags": [
+    "comandos",
+    "terminal",
+    "navegacion",
+    "case-sensitive",
+    "GNU/Linux",
+    "M2"
+  ],
+  "id": "Bmggt_GM1iPhkopSN6AnU",
+  "fecha": "2026-05-03"
+}

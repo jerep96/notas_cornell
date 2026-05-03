@@ -1,0 +1,80 @@
+{
+  "titulo": "Editores de texto",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 2",
+  "tematicaDetectada": "Editores de texto en la terminal: Pico, Nano, Emacs, VI y VIM",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Primera Edición [Pág. 47–63]",
+  "preguntas": [
+    "¿Qué es un editor de texto y en qué difiere de un procesador de texto?",
+    "¿Cuáles son los editores más populares en Linux?",
+    "¿Qué es VIM y cuál es su origen?",
+    "¿Cuáles son los 3 modos de VIM y cómo se navega entre ellos?",
+    "¿Cuáles son los comandos esenciales de VIM para editar, guardar y salir?"
+  ],
+  "notas": [
+    {
+      "text": "Un **editor de texto** corre en la terminal y permite crear, ver y modificar archivos en **texto plano**, sin formato ni metadatos.",
+      "hl": true
+    },
+    {
+      "text": "A diferencia de un procesador de texto como Word, los editores no añaden metadatos al archivo. Son esenciales para editar archivos de configuración y scripts del sistema.",
+      "hl": false
+    },
+    {
+      "text": "**Pico:** editor sencillo y minimalista; nació como parte del cliente de correo Pine. Control por teclado con barra de comandos en la parte inferior.",
+      "hl": false
+    },
+    {
+      "text": "**Nano:** clon mejorado de Pico. Viene preinstalado en muchas distribuciones. Interfaz simple, la opción más accesible para principiantes.",
+      "hl": false
+    },
+    {
+      "text": "**Emacs:** creado por Richard Stallman para el proyecto GNU. Muy potente y extensible; curva de aprendizaje alta.",
+      "hl": false
+    },
+    {
+      "text": "**VI:** editor estándar en casi todas las distribuciones Linux/Unix. Creado por Bill Joy (Sun Microsystems) en 1976. Ligero y eficiente.",
+      "hl": false
+    },
+    {
+      "text": "**VIM (Vi IMproved):** versión mejorada de VI creada en 1991 por Bram Moolenaar. Lema: 'editor para programadores'. Se abre con `$ vi archivo`.",
+      "hl": true
+    },
+    {
+      "text": "**Modo Comando:** modo por defecto al abrir VIM. Las teclas ejecutan acciones (mover cursor, borrar, copiar). Se vuelve a este modo con `Esc`.",
+      "hl": true
+    },
+    {
+      "text": "**Modo Escritura (inserción):** se activa con `i`. Permite escribir e insertar texto. Se sale con `Esc`.",
+      "hl": true
+    },
+    {
+      "text": "**Modo EX (última línea):** desde Modo Comando, se activa con `:`. El cursor va al final de la pantalla; permite comandos de acción y búsqueda.",
+      "hl": true
+    },
+    {
+      "text": "`i` insertar texto | `Esc` volver a Modo Comando | `x` borra carácter bajo el cursor | `dd` borra/corta la línea | `yy` copia la línea",
+      "hl": false
+    },
+    {
+      "text": "`5yy` copia 5 líneas | `5dd` corta 5 líneas | `p` pega debajo del cursor | `P` pega encima del cursor | `u` deshace el último cambio",
+      "hl": false
+    },
+    {
+      "text": "`:w` guarda el archivo | `:q` sale sin guardar | `:set nu` numera las líneas | `/` abre campo de búsqueda de palabras",
+      "hl": false
+    }
+  ],
+  "resumen": "Los editores de texto en Linux operan sobre texto plano sin metadatos ni formato, siendo indispensables para editar configuraciones y scripts del sistema. Nano es la opción más accesible para principiantes; VIM es el más potente del entorno Unix/Linux. VIM funciona en 3 modos —Comando, Escritura y EX— que determinan qué hace cada tecla: dominar las transiciones con `i`, `Esc` y `:` es la clave para usarlo eficientemente.",
+  "tags": [
+    "editores",
+    "vim",
+    "nano",
+    "terminal",
+    "texto-plano",
+    "GNU/Linux",
+    "M2"
+  ],
+  "id": "_OomXSeRtZJ-pgpi9fix7",
+  "fecha": "2026-05-03"
+}

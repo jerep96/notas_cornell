@@ -1,0 +1,63 @@
+{
+  "titulo": "Shell: introducción a la terminal",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 2",
+  "tematicaDetectada": "Terminal de texto y tipos de shell en GNU/Linux",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Primera Edición [Pág. 47–63]",
+  "preguntas": [
+    "¿Qué es la terminal de texto (CLI)?",
+    "¿Qué diferencia hay entre CLI y GUI?",
+    "¿Qué es el shell y qué rol cumple?",
+    "¿Cuáles son los principales shells en GNU/Linux?",
+    "¿Cuál es el shell por defecto en la mayoría de distribuciones?"
+  ],
+  "notas": [
+    {
+      "text": "La **terminal de texto** es una interfaz de línea de comandos (CLI — Command Line Interface) que permite interactuar con el SO mediante comandos de texto.",
+      "hl": true
+    },
+    {
+      "text": "Es la herramienta fundamental para administrar GNU/Linux: da un control más directo y preciso que la interfaz gráfica (GUI).",
+      "hl": false
+    },
+    {
+      "text": "La **GUI** (Graphic User Interface) permite realizar muchas tareas, pero la CLI ofrece mayor flexibilidad y rapidez al administrador.",
+      "hl": false
+    },
+    {
+      "text": "El **shell** es el programa que interpreta los comandos escritos en la terminal. Actúa como intermediario entre el usuario y el sistema operativo.",
+      "hl": true
+    },
+    {
+      "text": "**sh (Bourne Shell):** primer shell creado para Unix por Stephen Bourne en los años 70.",
+      "hl": false
+    },
+    {
+      "text": "**Bash (Bourne Again Shell):** evolución de sh; el más común en GNU/Linux y shell por defecto en la mayoría de distribuciones.",
+      "hl": true
+    },
+    {
+      "text": "**Zsh (Z Shell):** potente y flexible, basado en sh, con características avanzadas.",
+      "hl": false
+    },
+    {
+      "text": "**Csh (C Shell):** desarrollado por Bill Joy; sintaxis basada en el lenguaje C.",
+      "hl": false
+    },
+    {
+      "text": "**Ksh (Korn Shell):** evolución de Csh; combina sh y csh con funciones avanzadas para programadores en C.",
+      "hl": false
+    }
+  ],
+  "resumen": "La terminal de texto (CLI) es la herramienta central de administración en GNU/Linux, más directa y flexible que la GUI. El shell actúa de intermediario entre el usuario y el SO: recibe los comandos, los interpreta y los ejecuta. Bash es el shell estándar en la mayoría de distribuciones; otros como Zsh, Csh y Ksh ofrecen características adicionales según el perfil del usuario.",
+  "tags": [
+    "shell",
+    "CLI",
+    "terminal",
+    "bash",
+    "GNU/Linux",
+    "M2"
+  ],
+  "id": "ku7d16civuKxWn74SuPID",
+  "fecha": "2026-05-03"
+}

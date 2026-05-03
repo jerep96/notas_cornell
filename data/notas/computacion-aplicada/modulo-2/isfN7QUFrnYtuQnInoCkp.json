@@ -1,0 +1,93 @@
+{
+  "titulo": "El standard FHS",
+  "materiaDetectada": "Computación Aplicada",
+  "moduloDetectado": "Módulo 2",
+  "tematicaDetectada": "Estructura de directorios y tipos de archivos en Linux",
+  "fuente": "Niklas, P. (2020). GNU/Linux, con sabor a Debian. Primera Edición [Pág. 47–63]",
+  "preguntas": [
+    "¿Qué es el FHS y cuál es su propósito?",
+    "¿Cuáles son los directorios más importantes del sistema?",
+    "¿Qué diferencia hay entre /bin y /sbin?",
+    "¿Qué diferencia hay entre /mnt y /media?",
+    "¿Qué diferencia hay entre /opt y /usr/local?",
+    "¿Qué tipos de directorios existen según su función?",
+    "¿Qué tipos de archivos existen en Linux y cómo se identifican en ls -l?"
+  ],
+  "notas": [
+    {
+      "text": "El **FHS (Filesystem Hierarchy Standard)** es un estándar que define la estructura de directorios en sistemas tipo Unix/Linux, iniciado en 1993 para uniformizar la organización de archivos entre distribuciones.",
+      "hl": true
+    },
+    {
+      "text": "**/ (raíz):** directorio de mayor importancia del que dependen todos los demás. Si se llena completamente, el sistema puede fallar de forma catastrófica.",
+      "hl": true
+    },
+    {
+      "text": "**/boot:** archivos del gestor de arranque (GRUB).",
+      "hl": false
+    },
+    {
+      "text": "**/dev:** archivos de dispositivos. En Linux, todo es un archivo: discos, particiones, mouse y teclado tienen representación aquí.",
+      "hl": false
+    },
+    {
+      "text": "**/etc:** archivos de configuración del sistema. No debe contener binarios ni datos de usuario.",
+      "hl": false
+    },
+    {
+      "text": "**/home:** directorio personal de cada usuario. Suele estar en una partición separada para controlar su crecimiento.",
+      "hl": false
+    },
+    {
+      "text": "**/var:** archivos que varían en tamaño (logs, colas de impresión).",
+      "hl": false
+    },
+    {
+      "text": "**/proc:** información del estado del sistema y procesos en ejecución. No contiene archivos reales; se genera dinámicamente en memoria.",
+      "hl": false
+    },
+    {
+      "text": "**/root:** home del superusuario root; separado de /home por seguridad.",
+      "hl": false
+    },
+    {
+      "text": "**/bin:** binarios esenciales accesibles para todos los usuarios. **/sbin:** binarios del sistema que solo puede usar el administrador (root).",
+      "hl": true
+    },
+    {
+      "text": "**/opt:** software instalado por el usuario fuera de la distribución. **/usr/local:** igual propósito pero con su propia estructura interna /bin, /lib, /sbin.",
+      "hl": false
+    },
+    {
+      "text": "**/media:** dispositivos de uso temporal (pendrives, CD-ROM). **/mnt:** montaje de uso más prolongado (discos externos, NFS).",
+      "hl": false
+    },
+    {
+      "text": "**Tipos de directorios — Estáticos:** no cambian sin intervención de root (/bin, /sbin, /opt, /boot, /usr).",
+      "hl": false
+    },
+    {
+      "text": "**Dinámicos:** contenido variable; recomendable partición propia. **Compartidos:** pueden estar en servidor remoto y usarse en red. **Restringidos:** solo modificables por el administrador (/etc, /boot, /run, /lock).",
+      "hl": false
+    },
+    {
+      "text": "En Linux **todo es un archivo**. Tipos identificados con el primer carácter de `ls -l`:",
+      "hl": true
+    },
+    {
+      "text": "**-** archivo regular (docs, scripts, imágenes). **d** directorio. **c** archivo de caracteres (I/O carácter a carácter). **b** archivo de bloques (I/O en bloques fijos). **p** pipe (canalización temporal). **l** link simbólico (softlink o hardlink).",
+      "hl": false
+    }
+  ],
+  "resumen": "El FHS establece una jerarquía estándar de directorios para sistemas Linux/Unix, garantizando uniformidad entre distribuciones desde 1993. En Linux todo es un archivo: documentos, dispositivos, pipes y links tienen representación en el sistema de archivos. Los directorios se clasifican según si su contenido cambia (dinámicos) o no (estáticos), y según quién puede modificarlos (restringidos solo para root). Conocer esta estructura es fundamental para administrar el sistema correctamente.",
+  "tags": [
+    "FHS",
+    "filesystem",
+    "directorios",
+    "tipos-de-archivo",
+    "GNU/Linux",
+    "M2"
+  ],
+  "id": "isfN7QUFrnYtuQnInoCkp",
+  "fecha": "2026-05-03"
+}
