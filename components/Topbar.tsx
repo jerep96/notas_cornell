@@ -2,19 +2,17 @@
 
 import { useStore } from '@/lib/store'
 import { useRouter } from 'next/navigation'
+import { useIsLocal } from '@/lib/useIsLocal'
 
 interface TopbarProps {
   onMenuClick: () => void
   onIngestClick: () => void
 }
 
-const isLocal =
-  process.env.NODE_ENV === 'development' ||
-  (typeof window !== 'undefined' && window.location.hostname === 'localhost')
-
 export default function Topbar({ onMenuClick, onIngestClick }: TopbarProps) {
   const { searchQuery, setSearch } = useStore()
   const router = useRouter()
+  const isLocal = useIsLocal()
 
   return (
     <header className="topbar">

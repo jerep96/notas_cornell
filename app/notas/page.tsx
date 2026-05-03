@@ -7,6 +7,7 @@ import Sidebar from '@/components/Sidebar'
 import Topbar from '@/components/Topbar'
 import NoteCard from '@/components/NoteCard'
 import IngestPanel from '@/components/IngestPanel'
+import { useIsLocal } from '@/lib/useIsLocal'
 
 function findNotaMeta(materias: Materia[], notaId: string) {
   for (const mat of materias) {
@@ -25,6 +26,7 @@ export default function NotasPage() {
   const { materias, searchQuery, getContextNotas } = useStore()
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [ingestOpen, setIngestOpen] = useState(false)
+  const isLocal = useIsLocal()
 
   const contextNotas: Nota[] = getContextNotas()
 
@@ -62,15 +64,15 @@ export default function NotasPage() {
                 {searchQuery ? 'No se encontraron notas' : 'No hay notas todavía'}
               </p>
               <p style={{ fontSize: '0.875rem' }}>
-                {searchQuery ? 'Intentá con otro término' : 'Ingresá un PDF para empezar'}
+                {searchQuery ? 'Intentá con otro término' : 'Todavía no hay notas guardadas'}
               </p>
-              {!searchQuery && (
+              {!searchQuery && isLocal && (
                 <button
                   className="btn-primary"
                   style={{ marginTop: '1rem' }}
                   onClick={() => setIngestOpen(true)}
                 >
-                  + Ingresar PDF
+                  Importar apunte
                 </button>
               )}
             </div>

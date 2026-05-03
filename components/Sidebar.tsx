@@ -4,10 +4,7 @@ import { useStore } from '@/lib/store'
 import { Materia, Modulo, Tematica } from '@/lib/types'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-
-const isLocal =
-  process.env.NODE_ENV === 'development' ||
-  (typeof window !== 'undefined' && window.location.hostname === 'localhost')
+import { useIsLocal } from '@/lib/useIsLocal'
 
 interface SidebarProps {
   isOpen: boolean
@@ -38,6 +35,7 @@ export default function Sidebar({ isOpen, onClose, onIngestClick }: SidebarProps
   const [openMaterias, setOpenMaterias] = useState<Record<string, boolean>>({})
   const [openModulos, setOpenModulos] = useState<Record<string, boolean>>({})
   const router = useRouter()
+  const isLocal = useIsLocal()
 
   function toggleMateria(id: string) {
     setOpenMaterias((prev) => ({ ...prev, [id]: !prev[id] }))
