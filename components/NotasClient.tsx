@@ -53,20 +53,24 @@ export default function NotasClient({ notas }: NotasClientProps) {
   const materias = useMemo(() => buildTree(notas), [notas])
 
   const filtered = useMemo(() => {
+    const mat = (n: NotaArchivo) => n.materiaDetectada || 'General'
+    const mod = (n: NotaArchivo) => n.moduloDetectado || 'Módulo 1'
+    const tem = (n: NotaArchivo) => n.tematicaDetectada || 'General'
+
     let result = notas
     if (selectedTematica && selectedModulo && selectedMateria) {
       result = result.filter(
         (n) =>
-          n.materiaDetectada === selectedMateria &&
-          n.moduloDetectado === selectedModulo &&
-          n.tematicaDetectada === selectedTematica,
+          mat(n) === selectedMateria &&
+          mod(n) === selectedModulo &&
+          tem(n) === selectedTematica,
       )
     } else if (selectedModulo && selectedMateria) {
       result = result.filter(
-        (n) => n.materiaDetectada === selectedMateria && n.moduloDetectado === selectedModulo,
+        (n) => mat(n) === selectedMateria && mod(n) === selectedModulo,
       )
     } else if (selectedMateria) {
-      result = result.filter((n) => n.materiaDetectada === selectedMateria)
+      result = result.filter((n) => mat(n) === selectedMateria)
     }
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase()
@@ -86,18 +90,21 @@ export default function NotasClient({ notas }: NotasClientProps) {
     setSelectedMateria(nombre)
     setSelectedModulo(null)
     setSelectedTematica(null)
+    setSidebarOpen(false)
   }
 
   function handleSelectModulo(matNombre: string, modNombre: string | null) {
     setSelectedMateria(matNombre)
     setSelectedModulo(modNombre)
     setSelectedTematica(null)
+    setSidebarOpen(false)
   }
 
   function handleSelectTematica(matNombre: string, modNombre: string, temNombre: string) {
     setSelectedMateria(matNombre)
     setSelectedModulo(modNombre)
     setSelectedTematica(temNombre)
+    setSidebarOpen(false)
   }
 
   return (
@@ -109,7 +116,7 @@ export default function NotasClient({ notas }: NotasClientProps) {
         onSearchChange={setSearchQuery}
       />
 
-      <div style={{ display: 'flex', flex: 1 }}>
+      <div className="body-wrap">
         <Sidebar
           isOpen={sidebarOpen}
           onClose={() => setSidebarOpen(false)}
@@ -123,7 +130,7 @@ export default function NotasClient({ notas }: NotasClientProps) {
           onSelectTematica={handleSelectTematica}
         />
 
-        <main className="main-content" style={{ flex: 1, padding: '1.5rem', minWidth: 0 }}>
+        <main className="main-content">
           {filtered.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '4rem 1rem', color: 'var(--ink-4)' }}>
               <p style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.1rem', marginBottom: '0.5rem' }}>
@@ -151,14 +158,7 @@ export default function NotasClient({ notas }: NotasClientProps) {
                 </h2>
               </div>
 
-              <div
-                className="notes-grid"
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-                  gap: '1rem',
-                }}
-              >
+              <div className="notes-grid">
                 {filtered.map((nota) => (
                   <NoteCard key={nota.id} nota={nota} />
                 ))}

@@ -78,14 +78,12 @@ export default function Sidebar({
 
   return (
     <>
-      {isOpen && (
-        <div
-          className="sidebar-overlay"
-          onClick={onClose}
-          aria-hidden
-        />
-      )}
-      <aside className={`sidebar${isOpen ? ' open' : ''}`} style={{ position: 'relative' }}>
+      <div
+        className={`sidebar-overlay${isOpen ? ' open' : ''}`}
+        onClick={onClose}
+        aria-hidden
+      />
+      <aside className={`sidebar${isOpen ? ' open' : ''}`}>
         <div style={{ padding: '0.75rem 0.75rem 0.5rem' }}>
           <p style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-4)', marginBottom: '0.5rem', fontFamily: 'var(--font-ibm-plex)' }}>
             Materias
