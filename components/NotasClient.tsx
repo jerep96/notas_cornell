@@ -123,7 +123,7 @@ export default function NotasClient({ notas }: NotasClientProps) {
           onSelectTematica={handleSelectTematica}
         />
 
-        <main style={{ flex: 1, padding: '1.5rem', minWidth: 0 }}>
+        <main className="main-content" style={{ flex: 1, padding: '1.5rem', minWidth: 0 }}>
           {filtered.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '4rem 1rem', color: 'var(--ink-4)' }}>
               <p style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.1rem', marginBottom: '0.5rem' }}>
@@ -145,13 +145,14 @@ export default function NotasClient({ notas }: NotasClientProps) {
           ) : (
             <>
               <div style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <h2 style={{ margin: 0, fontSize: '0.875rem', color: 'var(--ink-4)', fontFamily: 'var(--font-ibm-plex)', fontWeight: 400 }}>
+                <h2 className="notes-count" style={{ margin: 0, fontSize: '0.875rem', color: 'var(--ink-4)', fontFamily: 'var(--font-ibm-plex)', fontWeight: 400 }}>
                   {filtered.length} nota{filtered.length !== 1 ? 's' : ''}
                   {searchQuery && ` para "${searchQuery}"`}
                 </h2>
               </div>
 
               <div
+                className="notes-grid"
                 style={{
                   display: 'grid',
                   gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',

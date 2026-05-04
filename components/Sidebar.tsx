@@ -62,11 +62,13 @@ export default function Sidebar({
   function handleMateriaClick(matNombre: string) {
     onSelectMateria(matNombre)
     toggleMateria(matNombre)
+    onClose()
   }
 
   function handleModuloClick(matNombre: string, modNombre: string) {
     onSelectModulo(matNombre, modNombre)
     toggleModulo(modNombre)
+    onClose()
   }
 
   function handleTematicaClick(matNombre: string, modNombre: string, temNombre: string) {
@@ -78,7 +80,7 @@ export default function Sidebar({
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 z-20 bg-black/30 md:hidden"
+          className="sidebar-overlay"
           onClick={onClose}
           aria-hidden
         />
