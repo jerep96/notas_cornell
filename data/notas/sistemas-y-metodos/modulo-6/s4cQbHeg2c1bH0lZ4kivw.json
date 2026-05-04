@@ -1,0 +1,46 @@
+{
+  "titulo": "Administración de operaciones: introducción y circuitos",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 6",
+  "tematicaDetectada": "Operaciones, manuales administrativos y circuitos",
+  "fuente": "APU 0177 — El proceso administrativo. Introducción y definiciones",
+  "preguntas": [
+    "¿Qué diferencia hay entre una organización de producción y una de servicios?",
+    "¿Qué abarca la administración de operaciones como actividad?",
+    "¿Qué establece la Norma IRAM-34.501 y para qué sirve?",
+    "¿Qué diferencia hay entre un manual de organización y uno de procedimientos?",
+    "¿Para qué sirve un manual del usuario?"
+  ],
+  "notas": [
+    {
+      "text": "La **administración de operaciones** es una actividad compleja que abarca planificar la producción, organizar recursos, dirigir operaciones y personal, y controlar el desempeño del sistema.",
+      "hl": true
+    },
+    {
+      "text": "**Organización de producción**: genera bienes tangibles, producibles en masa y almacenables. **Organización de servicios**: genera bienes intangibles, requiere participación del consumidor y no se pueden almacenar.",
+      "hl": false
+    },
+    {
+      "text": "Los **circuitos administrativos** representan gráficamente los procesos mediante símbolos acordados con el usuario o normalizados por la **Norma IRAM-34.501**.",
+      "hl": false
+    },
+    {
+      "text": "El **manual de organización** describe la estructura formal: jerarquías, funciones, autoridad y responsabilidad de cada puesto.",
+      "hl": false
+    },
+    {
+      "text": "El **manual de procedimientos** detalla circuitos y operaciones: tareas, formularios, archivos y controles. El **manual del usuario** especifica instrucciones de sistemas automatizados.",
+      "hl": false
+    }
+  ],
+  "resumen": "La administración de operaciones gestiona el ciclo completo de transformación de una organización: planificación, organización, dirección y control. Las organizaciones se clasifican en productoras (bienes tangibles, almacenables) o de servicios (bienes intangibles, requieren al cliente). Para comunicar y controlar el funcionamiento se usan manuales —de organización, de procedimientos y del usuario— y circuitos administrativos representados con simbología normalizada.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo6",
+    "operaciones",
+    "manuales-administrativos",
+    "circuitos"
+  ],
+  "id": "s4cQbHeg2c1bH0lZ4kivw",
+  "fecha": "2026-05-04"
+}

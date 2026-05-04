@@ -1,0 +1,43 @@
+{
+  "titulo": "Control organizacional: proceso, tipos y Balance Scorecard",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 5",
+  "tematicaDetectada": "Control estratégico y herramientas de medición del desempeño",
+  "fuente": "APU 0177 — La Planificación y el Control / Planificación: Introducción",
+  "preguntas": [
+    "¿Cuáles son las cuatro fases del proceso de control organizacional?",
+    "¿En qué niveles de la organización se aplica el control?",
+    "¿Cuáles son los tres tipos de controles y qué mide cada uno?",
+    "¿Cuáles son las cuatro perspectivas del Balance Scorecard?",
+    "¿Qué ventaja tiene el BSC sobre los controles puramente financieros?"
+  ],
+  "notas": [
+    {
+      "text": "El **control** es el proceso de establecer normas y métodos para medir el desempeño y asegurarse de que las actividades reales se ajusten a las planificadas. Su ciclo tiene cuatro fases: (1) establecer **parámetros de medición** (indicadores), (2) **medir los resultados**, (3) **evaluar** comparando real vs. esperado, y (4) **retroalimentar** tomando medidas correctivas.",
+      "hl": true
+    },
+    {
+      "text": "Los controles se aplican en cuatro niveles: **corporativo**, **divisional**, **funcional** e **individual**. Los tipos de control son: **financieros** (estados financieros, balance general, estado de resultados), **presupuestarios** (ingresos, egresos, utilidades, compras) y **auditorías** (externas e internas — calidad, gestión, preventiva, sistemas).",
+      "hl": false
+    },
+    {
+      "text": "El **control estratégico** establece sistemas apropiados en los niveles corporativo, de negocios y funcional. Permite evaluar si se logran eficiencia, calidad, innovación y satisfacción del cliente, verificando que la implementación de la estrategia fue exitosa.",
+      "hl": false
+    },
+    {
+      "text": "El **Balance Scorecard** (BSC o cuadro de mando integral) mide el desempeño desde cuatro perspectivas interrelacionadas centradas en visión y estrategia: **financiera** (¿cómo nos ven los inversionistas?), **cliente** (¿cómo nos ven los clientes?), **procesos internos** (¿en qué debemos sobresalir?) y **aprendizaje y crecimiento** (¿cómo mantenemos la capacidad de cambiar y progresar?).",
+      "hl": false
+    }
+  ],
+  "resumen": "La planificación sin control es incompleta: el control cierra el ciclo verificando que la ejecución se ajusta a lo planificado y corrigiendo desvíos. Su proceso cíclico abarca desde la definición de indicadores hasta la retroalimentación correctiva. Los controles financieros, presupuestarios y las auditorías son los instrumentos clásicos, pero el Balance Scorecard amplía la visión incorporando perspectivas del cliente, los procesos internos y el aprendizaje organizacional, alineando toda la organización con la estrategia de largo plazo.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo5",
+    "control",
+    "proceso-de-control",
+    "balance-scorecard",
+    "controles-estrategicos"
+  ],
+  "id": "QRwyBw38L0YLst44ZMqY4",
+  "fecha": "2026-05-04"
+}

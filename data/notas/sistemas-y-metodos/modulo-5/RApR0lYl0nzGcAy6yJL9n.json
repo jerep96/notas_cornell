@@ -1,0 +1,43 @@
+{
+  "titulo": "Herramientas de diagnóstico estratégico: FODA y cadena de valor",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 5",
+  "tematicaDetectada": "Análisis FODA y cadena de valor de Porter",
+  "fuente": "APU 0177 — La Planificación y el Control en la Gestión Organizacional",
+  "preguntas": [
+    "¿Qué aspectos analiza el FODA y cuáles son internos vs. externos?",
+    "¿Cuál es el objetivo estratégico del análisis FODA más allá de listar factores?",
+    "¿Cuáles son las cinco actividades primarias de la cadena de valor de Porter?",
+    "¿Qué diferencia hay entre actividades primarias y de soporte en la cadena de valor?",
+    "¿Para qué le sirve a una empresa analizar su cadena de valor?"
+  ],
+  "notas": [
+    {
+      "text": "El **análisis FODA** evalúa cuatro factores: **Fortalezas** y **Debilidades** (internos — dentro de la empresa) y **Oportunidades** y **Amenazas** (externos — del entorno). El objetivo no es solo listarlos sino formular estrategias: usar fortalezas para aprovechar oportunidades, superar debilidades con oportunidades, usar fortalezas contra amenazas y reducir debilidades evitando amenazas.",
+      "hl": true
+    },
+    {
+      "text": "La **cadena de valor** (Michael Porter) describe las actividades que una empresa realiza para crear valor. Las **actividades primarias** son: logística interna, operaciones, logística externa, marketing y ventas, y servicios posventa. Estas están directamente implicadas en la creación y entrega del producto.",
+      "hl": false
+    },
+    {
+      "text": "Las **actividades de soporte** respaldan a las primarias: infraestructura de la empresa (planificación, finanzas), gestión de RRHH, desarrollo de tecnología (I+D, diseño) y compras/abastecimiento. Cada actividad puede ser fuente de ventaja competitiva si se optimiza.",
+      "hl": false
+    },
+    {
+      "text": "El **pensamiento sistémico** (Peter Senge) actúa como eslabón integrador: conecta el análisis estático del FODA con la ejecución dinámica del control. Ayuda a ver la totalidad y las interrelaciones en lugar de hechos aislados, permitiendo identificar causas profundas de los problemas y evitar soluciones sintomáticas de corto plazo.",
+      "hl": false
+    }
+  ],
+  "resumen": "Antes de planificar es imprescindible diagnosticar. El análisis FODA permite identificar la posición competitiva de la organización cruzando factores internos y externos para formular estrategias coherentes. La cadena de valor de Porter complementa este diagnóstico al revelar dónde y cómo la empresa crea valor en cada actividad, desde la logística hasta el servicio posventa. Ambas herramientas, integradas con el pensamiento sistémico, forman la base del diseño estratégico.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo5",
+    "foda",
+    "cadena-de-valor",
+    "porter",
+    "diagnostico-estrategico"
+  ],
+  "id": "RApR0lYl0nzGcAy6yJL9n",
+  "fecha": "2026-05-04"
+}

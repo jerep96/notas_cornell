@@ -1,0 +1,47 @@
+{
+  "titulo": "Liderazgo: definición, estilos y rejilla administrativa (Blake & Mouton)",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 4",
+  "tematicaDetectada": "Liderazgo gerencial y estilos de dirección",
+  "fuente": "APU 0177 — La Dirección: Motivación, Liderazgo, Negociación, Toma de decisiones",
+  "preguntas": [
+    "¿Cuáles son las cuatro implicaciones clave de la definición de liderazgo gerencial?",
+    "¿Qué dos ejes componen la rejilla administrativa de Blake y Mouton?",
+    "¿Cuál es el estilo ideal según la rejilla y por qué?",
+    "¿Qué diferencia hay entre el estilo 9.1 y el 1.9?",
+    "¿Qué caracteriza al estilo 1.1 (empobrecida) y qué consecuencias genera?"
+  ],
+  "notas": [
+    {
+      "text": "El **liderazgo gerencial** es el proceso de dirigir e influir en las actividades laborales de un grupo. Implica: (1) involucrar a otras personas, (2) distribución desigual del poder, (3) capacidad de usar esas diferencias de poder para influir en conductas, y (4) que el liderazgo es una cuestión de **valores**.",
+      "hl": true
+    },
+    {
+      "text": "La **rejilla administrativa** (Blake & Mouton) clasifica estilos en dos dimensiones: preocupación por la producción (eje X) y preocupación por la gente (eje Y), generando cinco estilos: empobrecida (1.1), club campestre (1.9), autoritaria/tareas (9.1), mitad de camino (5.5) y equipo (9.9).",
+      "hl": false
+    },
+    {
+      "text": "**Dirección de equipo (9.9)**: máxima preocupación por producción y gente. Es el estilo ideal — logra resultados integrando las tareas con las necesidades humanas, fomentando compromiso, respeto y confianza mutua.",
+      "hl": false
+    },
+    {
+      "text": "**Dirección de tareas (9.1)**: máxima producción, mínima gente — trata a las personas como máquinas. **Club campestre (1.9)**: prioriza el clima agradable sobre los resultados. **Empobrecida (1.1)**: mínimo esfuerzo en ambas dimensiones, genera apatía e indiferencia.",
+      "hl": false
+    },
+    {
+      "text": "**Péndulo amortiguado (5.5)**: equilibrio moderado entre producción y gente. Busca rendimiento adecuado sin presionar demasiado ni sacrificar el bienestar, buscando ser justo pero firme.",
+      "hl": false
+    }
+  ],
+  "resumen": "El liderazgo gerencial no se limita a dar órdenes: implica influir en un grupo con base en valores y una distribución del poder. La rejilla administrativa de Blake y Mouton permite identificar cinco estilos según la combinación de preocupación por la producción y por la gente. El estilo ideal es el 9.9 (equipo), que integra ambas dimensiones y maximiza tanto los resultados como el bienestar del equipo.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo4",
+    "liderazgo",
+    "rejilla-administrativa",
+    "blake-mouton",
+    "estilos-de-liderazgo"
+  ],
+  "id": "zUHXxIetH2sJ1qVa1pL5_",
+  "fecha": "2026-05-04"
+}

@@ -1,0 +1,43 @@
+{
+  "titulo": "Fuentes del poder organizacional (French y Raven)",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 3",
+  "tematicaDetectada": "Tipos y fuentes de poder",
+  "fuente": "APU 0177 — Poder y Autoridad",
+  "preguntas": [
+    "¿Cuáles son las cinco fuentes de poder según French y Raven?",
+    "¿Qué diferencia al poder legítimo del poder de experto?",
+    "¿Por qué el poder coercitivo es efectivo a corto plazo pero problemático a largo plazo?",
+    "¿Puede alguien sin cargo tener poder en una organización? ¿De qué tipo?",
+    "¿Qué caracteriza al poder de referencia y con qué tipo de liderazgo se asocia?"
+  ],
+  "notas": [
+    {
+      "text": "Las cinco **fuentes de poder** (French y Raven) son: recompensa (distribuir beneficios valorados), coercitivo (aplicar castigos o consecuencias negativas), legítimo (posición formal en la jerarquía), experto (conocimiento especializado) y referente (cualidades personales que generan admiración y lealtad).",
+      "hl": true
+    },
+    {
+      "text": "El **poder de recompensa** se basa en la capacidad de otorgar beneficios tangibles (ascensos, bonificaciones) o intangibles (reconocimiento, proyectos interesantes). El **poder coercitivo** es su contracara: usa el miedo y amenazas. Su uso excesivo genera resentimiento y ambientes tóxicos.",
+      "hl": false
+    },
+    {
+      "text": "El **poder legítimo** equivale a la autoridad formal: deriva del cargo ocupado. El **poder de experto** no depende del rango sino del conocimiento técnico especializado — un junior puede tener más poder de experto que su gerente en un área específica.",
+      "hl": false
+    },
+    {
+      "text": "El **poder de referente** se basa en el carisma, la integridad y las habilidades interpersonales. La gente sigue a esta persona porque la admira y confía en ella, no porque deba hacerlo. Está fuertemente asociado al liderazgo transformacional.",
+      "hl": false
+    }
+  ],
+  "resumen": "El poder en las organizaciones no surge exclusivamente de un cargo formal. French y Raven identificaron cinco fuentes: recompensa, coerción, legitimidad, experticia y referencia. Cada una opera de manera diferente y tiene distintos efectos sobre la motivación y el clima organizacional. El poder de experto y el referente son especialmente relevantes en entornos técnicos y especializados como los de tecnología y ciberseguridad.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo3",
+    "fuentes-de-poder",
+    "french-raven",
+    "poder-experto",
+    "liderazgo"
+  ],
+  "id": "XvEqKf7LgChgBUH67HwP3",
+  "fecha": "2026-05-04"
+}

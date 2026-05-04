@@ -1,0 +1,43 @@
+{
+  "titulo": "Comunicación organizacional: proceso, tipos y stakeholders",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 4",
+  "tematicaDetectada": "Comunicación en las organizaciones",
+  "fuente": "APU 0177 — La Dirección: Motivación, Liderazgo, Negociación, Toma de decisiones",
+  "preguntas": [
+    "¿Cuáles son los cinco elementos del proceso de comunicación?",
+    "¿Qué diferencia hay entre comunicación formal e informal?",
+    "¿Qué es la comunicación vertical y cómo fluye?",
+    "¿Qué es un stakeholder en el contexto de la comunicación organizacional?",
+    "¿Por qué la retroalimentación es un elemento clave del proceso comunicativo?"
+  ],
+  "notas": [
+    {
+      "text": "La **comunicación** es el proceso mediante el cual las personas comparten significados por medio de mensajes simbólicos. Sus cinco elementos son: **Emisor** (quién) → **Mensaje** (dice qué) → **Medio** (en qué forma) → **Receptor** (a quién) → **Retroalimentación** (con qué efecto).",
+      "hl": true
+    },
+    {
+      "text": "**Comunicación formal**: sigue la estructura jerárquica oficial, a través de medios escritos, orales o gráficos. Puede ser interna (dentro de la empresa) o externa (con clientes, proveedores). Es respaldada y controlada por los gerentes.",
+      "hl": false
+    },
+    {
+      "text": "**Comunicación informal**: surge espontáneamente de las relaciones sociales sin seguir canales oficiales. Puede ser fuente de desinformación, pero también agiliza la comunicación y fortalece relaciones. La **comunicación vertical** sube o baja por la cadena de mando.",
+      "hl": false
+    },
+    {
+      "text": "En comunicación interna y externa es fundamental identificar al **stakeholder**: el destinatario del mensaje, ya sea interno (empleados, gerentes) o externo (clientes, proveedores, organismos reguladores). La comunicación se diseña según quién es ese receptor.",
+      "hl": false
+    }
+  ],
+  "resumen": "La comunicación es el sistema nervioso de cualquier organización: sin ella no hay coordinación, motivación ni liderazgo posible. El proceso comunicativo incluye emisor, mensaje, medio, receptor y retroalimentación como cierre del ciclo. La distinción entre comunicación formal e informal, y entre interna y externa, permite identificar qué canal y tono usar según el stakeholder al que va dirigido el mensaje.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo4",
+    "comunicacion",
+    "proceso-comunicativo",
+    "formal-informal",
+    "stakeholder"
+  ],
+  "id": "V4h__f6tCuCu0YdfniRzI",
+  "fecha": "2026-05-04"
+}

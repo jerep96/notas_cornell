@@ -1,0 +1,43 @@
+{
+  "titulo": "Planificación: definición, metas, misión, visión y niveles de estrategia",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 5",
+  "tematicaDetectada": "Fundamentos de la planificación organizacional",
+  "fuente": "APU 0177 — La Planificación y el Control / Planificación: Introducción",
+  "preguntas": [
+    "¿Cuál es la diferencia entre planificación organizacional y administración estratégica?",
+    "¿Cuáles son los cuatro motivos por los que las metas son importantes?",
+    "¿Qué diferencia hay entre misión y visión?",
+    "¿Cuáles son los tres niveles de estrategia y quién es responsable de cada uno?",
+    "¿Cuáles son las dos grandes etapas del proceso de administración estratégica?"
+  ],
+  "notas": [
+    {
+      "text": "La **planificación** es un proceso continuo de toma de decisiones para alcanzar un futuro deseado, considerando la situación actual y los factores internos y externos que pueden influir en los objetivos. La **administración estratégica** es más amplia: adapta los recursos y habilidades de la organización al entorno cambiante, aprovechando oportunidades y evaluando riesgos.",
+      "hl": true
+    },
+    {
+      "text": "Las **metas** son importantes por cuatro motivos: (1) dan sentido de dirección, (2) enfocan los esfuerzos de la organización, (3) guían los planes y decisiones, y (4) sirven como parámetros para evaluar el avance de los objetivos.",
+      "hl": false
+    },
+    {
+      "text": "La **misión** es la razón de ser de la organización: describe qué hace, para quién y cómo, justificando su existencia. La **visión** es lo que la organización aspira a ser en el futuro: una imagen inspiradora del destino deseado. Las **metas y objetivos** son los resultados concretos y medibles para cumplir la misión.",
+      "hl": false
+    },
+    {
+      "text": "Los tres niveles de estrategia son: **corporativo** (alta dirección, múltiples negocios), **unidad de negocios** (metas de un negocio concreto) y **funcional** (área específica que implementa la estrategia de la unidad de negocios). El proceso de administración estratégica comprende la **planificación estratégica** (metas y estrategias) y la **implantación** (administración y control estratégico).",
+      "hl": false
+    }
+  ],
+  "resumen": "La planificación es la función fundamental del proceso administrativo: define adónde quiere llegar la organización y cómo lograrlo. Para ser efectiva necesita metas claras que dirijan los esfuerzos, una misión que justifique la existencia de la organización y una visión que inspire el futuro deseado. La estrategia se despliega en tres niveles jerárquicos — corporativo, de negocios y funcional — y su proceso abarca desde la formulación hasta el control estratégico.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo5",
+    "planificacion",
+    "metas",
+    "mision-vision",
+    "administracion-estrategica"
+  ],
+  "id": "-XeCNzYybm9KmowGsU5mp",
+  "fecha": "2026-05-04"
+}

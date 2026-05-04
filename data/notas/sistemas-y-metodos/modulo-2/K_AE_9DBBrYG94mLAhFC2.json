@@ -1,0 +1,47 @@
+{
+  "titulo": "El puesto de trabajo y su descripción",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 2",
+  "tematicaDetectada": "Descripción de puestos y rol",
+  "fuente": "APU 0177 — Tipos de puestos y tipos de equipos",
+  "preguntas": [
+    "¿Cuáles son los tres componentes clave de un puesto de trabajo?",
+    "¿Qué elementos debe contemplar la descripción de un puesto?",
+    "¿Qué diferencia hay entre un puesto y un rol?",
+    "¿Para qué sirve la descripción de puestos en la evaluación del empleado?",
+    "¿Qué dimensiones del puesto deben estar determinadas en el organigrama?"
+  ],
+  "notas": [
+    {
+      "text": "Un **puesto de trabajo** es una posición específica dentro del organigrama que implica tareas, deberes y responsabilidades predefinidas. Sus tres componentes clave son: **tareas** (qué se hace), **responsabilidad** (sobre qué se rinde cuentas) y **autoridad** (qué decisiones se pueden tomar).",
+      "hl": true
+    },
+    {
+      "text": "La descripción del puesto debe incluir: responsabilidades, requisitos, ubicación en el **organigrama**, dimensiones (jerarquía, cantidad de personal, responsabilidad patrimonial y financiera), objetivos, acciones-resultados y medición de logros.",
+      "hl": false
+    },
+    {
+      "text": "La descripción de puestos es la base para la **evaluación del empleado**: permite medir el alcance de objetivos y determinar méritos y premios que otorgue la compañía.",
+      "hl": false
+    },
+    {
+      "text": "El **puesto** es la descripción formal y estática (el papel); el **rol** es la dimensión dinámica — cómo una persona vive e interpreta ese puesto en su interacción real con colegas, superiores y clientes.",
+      "hl": false
+    },
+    {
+      "text": "Dos personas pueden ocupar el mismo puesto pero desempeñar roles distintos. Ejemplo: dos vendedores con igual descripción formal, uno cumple lo mínimo y otro asume conductas proactivas no escritas.",
+      "hl": false
+    }
+  ],
+  "resumen": "El puesto de trabajo es la unidad fundamental de la estructura organizacional, definida por tareas, responsabilidades y autoridad. Su descripción formal sirve de base para ubicar al empleado en el organigrama y evaluar su desempeño. Más allá del puesto escrito existe el rol, que refleja cómo cada persona interpreta y vive esa posición en la práctica cotidiana.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo2",
+    "puestos",
+    "descripcion-de-puestos",
+    "rol",
+    "organigrama"
+  ],
+  "id": "K_AE_9DBBrYG94mLAhFC2",
+  "fecha": "2026-05-04"
+}

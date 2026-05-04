@@ -1,0 +1,48 @@
+{
+  "titulo": "Motivación: ciclo, Maslow y teorías complementarias",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 4",
+  "tematicaDetectada": "Teorías de la motivación organizacional",
+  "fuente": "APU 0177 — Fundamentos de la Dirección y habilidades gerenciales",
+  "preguntas": [
+    "¿Cuál es el ciclo de la motivación y cuáles son sus cuatro etapas?",
+    "¿Cuáles son los cinco niveles de la Pirámide de Maslow de menor a mayor?",
+    "¿Qué tres factores componen la motivación según Vroom y qué ocurre si uno es cero?",
+    "¿Qué es la teoría del reforzamiento de Skinner y cuáles son sus técnicas?",
+    "¿Qué diferencia hay entre recompensa intrínseca y extrínseca?"
+  ],
+  "notas": [
+    {
+      "text": "La **motivación** son los factores que ocasionan, canalizan y sostienen la conducta de una persona. Su ciclo es: **Necesidad** (privación/tensión) → **Impulso** (motivo que moviliza) → **Acciones** (conducta dirigida a una meta) → **Satisfacción** (disminuye el impulso) → nueva necesidad.",
+      "hl": true
+    },
+    {
+      "text": "La **Pirámide de Maslow** jerarquiza cinco necesidades: fisiológicas (base — alimentación, descanso), seguridad (empleo, estabilidad), sociales/afiliación (pertenencia, relaciones), estima/reconocimiento (éxito, respeto) y autorrealización (cima — máximo potencial). Deben satisfacerse de abajo hacia arriba.",
+      "hl": false
+    },
+    {
+      "text": "La **Teoría de las expectativas** (Vroom): la motivación es producto de tres factores: **Expectativa** (si me esfuerzo, ¿lo logro?), **Instrumentalidad** (si lo logro, ¿me recompensan?) y **Valencia** (¿valoro esa recompensa?). Si cualquiera de los tres es cero, la motivación es nula.",
+      "hl": false
+    },
+    {
+      "text": "La **Teoría del reforzamiento** (Skinner): el comportamiento es función de sus consecuencias. Las conductas seguidas de consecuencias positivas tienden a repetirse (**reforzamiento positivo**). Las técnicas incluyen: reforzamiento positivo, aprendizaje elusivo, extinción y castigo.",
+      "hl": false
+    },
+    {
+      "text": "Recompensa **extrínseca**: tangible, proporcionada por un tercero (dinero, ascenso). Recompensa **intrínseca**: satisfacción personal derivada directamente de la tarea (sentido de logro, orgullo). Un buen líder sabe combinar ambas.",
+      "hl": false
+    }
+  ],
+  "resumen": "La motivación es el conjunto de factores que impulsan, canalizan y sostienen la conducta. Maslow explica que las necesidades humanas son jerárquicas y deben satisfacerse en orden. Vroom agrega que la motivación depende de la expectativa de logro, la recompensa esperada y el valor que se le asigna. Skinner aporta que el comportamiento se modela a través de sus consecuencias. Conocer estas teorías permite a un líder diseñar estrategias de motivación más efectivas y personalizadas.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo4",
+    "motivacion",
+    "maslow",
+    "vroom",
+    "skinner",
+    "recompensas"
+  ],
+  "id": "tt5vJs6wouyk6qwaX6unE",
+  "fecha": "2026-05-04"
+}

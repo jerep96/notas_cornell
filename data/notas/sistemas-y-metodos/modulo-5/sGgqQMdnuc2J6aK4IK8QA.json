@@ -1,0 +1,43 @@
+{
+  "titulo": "Tipos de planes: estratégico, táctico y operativo",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 5",
+  "tematicaDetectada": "Niveles de planificación organizacional",
+  "fuente": "APU 0177 — La Planificación y el Control en la Gestión Organizacional",
+  "preguntas": [
+    "¿Qué caracteriza al nivel estratégico de planificación en cuanto a horizonte temporal y tipo de decisiones?",
+    "¿Quiénes son responsables de los planes tácticos y qué los diferencia de los estratégicos?",
+    "¿Qué tipo de decisiones se toman en el nivel operativo y por quién?",
+    "¿Cómo se relacionan los tres niveles entre sí dentro de una misma organización?",
+    "¿Qué son las decisiones programadas y cuándo aparecen en cada nivel?"
+  ],
+  "notas": [
+    {
+      "text": "Los tres **niveles de planificación** forman una pirámide: el **estratégico** (cima) define objetivos de largo plazo (3-5 años o más) con decisiones no programadas a cargo de la alta dirección; el **táctico** (nivel medio) traduce la estrategia en planes por área con horizonte de 1-3 años; el **operativo** (base) establece procedimientos y cronogramas cotidianos de corto plazo con decisiones mayormente programadas.",
+      "hl": true
+    },
+    {
+      "text": "El **nivel estratégico** produce planes amplios y genéricos para la organización como un todo. Ejemplo: una automotriz decide ingresar al mercado de vehículos eléctricos en los próximos 10 años. Las decisiones son complejas, únicas y no tienen respuesta predefinida.",
+      "hl": false
+    },
+    {
+      "text": "El **nivel táctico** es responsabilidad de gerentes de división o área. Coordina recursos para implementar la estrategia. Ejemplo: el departamento de Marketing diseña el plan de lanzamiento para los próximos 2 años. Las decisiones pueden ser programadas o no programadas.",
+      "hl": false
+    },
+    {
+      "text": "El **nivel operativo** está a cargo de supervisores y jefes de equipo. Sus planes son muy detallados, específicos y de corto plazo. Ejemplo: un supervisor organiza los turnos de producción de la semana. Las decisiones se basan en reglas y procedimientos establecidos.",
+      "hl": false
+    }
+  ],
+  "resumen": "La planificación no es uniforme en toda la organización: se despliega en tres niveles interconectados. El nivel estratégico fija el rumbo de largo plazo, el táctico traduce esa dirección en planes por área, y el operativo convierte esos planes en acciones concretas y cotidianas. Cada nivel tiene sus propios responsables, horizontes temporales y tipos de decisiones, y los tres deben estar alineados para que la estrategia se ejecute con coherencia.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo5",
+    "tipos-de-planes",
+    "nivel-estrategico",
+    "nivel-tactico",
+    "nivel-operativo"
+  ],
+  "id": "sGgqQMdnuc2J6aK4IK8QA",
+  "fecha": "2026-05-04"
+}

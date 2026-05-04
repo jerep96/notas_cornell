@@ -1,0 +1,52 @@
+{
+  "titulo": "Tipos de equipos formales: grupos de trabajo, task force y comités",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 2",
+  "tematicaDetectada": "Equipos formales en la organización",
+  "fuente": "APU 0177 — Tipos de puestos y tipos de equipos / La Organización",
+  "preguntas": [
+    "¿Qué caracteriza a un grupo de trabajo y cuál es su duración?",
+    "¿Qué es una task force y cuándo se utiliza?",
+    "¿En qué se diferencia un comité de una task force?",
+    "¿Cuál de los tres tipos es unifuncional y cuáles son multifuncionales?",
+    "¿Qué significa que un comité no figure en el organigrama pero sea igualmente formal?",
+    "¿Qué son los equipos de alto desempeño y cuáles son sus características?"
+  ],
+  "notas": [
+    {
+      "text": "Los tres tipos de **equipos formales** son: grupos de trabajo (permanentes, unifuncionales, ligados al organigrama), **task force** (temporales, multifuncionales, orientados a resolver un problema específico) y **comités** (generalmente permanentes, multifuncionales, orientados a gobernar o asesorar).",
+      "hl": true
+    },
+    {
+      "text": "Los **grupos de trabajo** están compuestos por un gerente y los empleados que le reportan directamente. Son permanentes y unifuncionales. Ejemplo: Gerencia de Operaciones, Dpto. de Contabilidad.",
+      "hl": false
+    },
+    {
+      "text": "La **task force** es un equipo de misión específica: se forma para un proyecto de alcance temporal con inicio y fin claros. Sus miembros provienen de distintas áreas (multidisciplinario) y el equipo se disuelve al cumplir su misión. No figura en el organigrama.",
+      "hl": false
+    },
+    {
+      "text": "Los **comités** son equipos formales de existencia generalmente duradera, creados para tareas estratégicas, operativas, comerciales o legales. Tampoco figuran en el organigrama, pero su pertenencia representa un reconocimiento a las aptitudes del participante.",
+      "hl": false
+    },
+    {
+      "text": "Los **equipos de alto desempeño** son autoadministrados, con miembros hábiles, responsabilidad compartida sobre una tarea, trabajando con métodos, programas y asignaciones definidas. Son interdisciplinarios y abordan problemas complejos, aunque pueden generar conflicto con los mandos medios.",
+      "hl": false
+    },
+    {
+      "text": "Las **etapas de desarrollo** de un equipo son: Formativa → Tormentosa → Normativa → Activa → Disolutiva.",
+      "hl": false
+    }
+  ],
+  "resumen": "Las organizaciones crean tres tipos principales de equipos formales según su propósito y duración. Los grupos de trabajo operan funciones permanentes dentro del organigrama. La task force se forma para resolver un problema específico en tiempo acotado y luego se disuelve. Los comités asesoran y gobernas sobre temas estratégicos o legales con carácter generalmente permanente. Conocer estas diferencias permite asignar el tipo correcto de equipo a cada necesidad organizacional.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo2",
+    "equipos-formales",
+    "task-force",
+    "comites",
+    "grupos-de-trabajo"
+  ],
+  "id": "B9w7MHRO6kGr5FcVhohDP",
+  "fecha": "2026-05-04"
+}

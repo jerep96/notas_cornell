@@ -1,0 +1,48 @@
+{
+  "titulo": "Jerarquía, centralización, descentralización y coordinación",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 3",
+  "tematicaDetectada": "Distribución del poder y mecanismos de integración organizacional",
+  "fuente": "APU 0177 — Poder y Autoridad",
+  "preguntas": [
+    "¿Qué es la jerarquía y qué determina dentro de una organización?",
+    "¿Cuál es la diferencia entre centralización vertical y horizontal?",
+    "¿Qué ventajas y desventajas tiene la centralización frente a la descentralización?",
+    "¿Cuáles son los cinco mecanismos de coordinación de Mintzberg?",
+    "¿Cuándo se usa el ajuste mutuo y en qué se diferencia de la supervisión directa?"
+  ],
+  "notas": [
+    {
+      "text": "La **jerarquía** es la organización de personas en rangos o niveles de importancia, estableciendo quién reporta a quién y creando líneas de autoridad y comunicación. La **centralización** concentra la toma de decisiones en los niveles más altos; la **descentralización** transfiere esa autoridad hacia niveles inferiores.",
+      "hl": true
+    },
+    {
+      "text": "La **descentralización vertical** delega decisiones hacia abajo en la cadena de mando. La **descentralización horizontal** transfiere poder hacia personas fuera de la línea de mando, como analistas, especialistas de staff o expertos técnicos.",
+      "hl": false
+    },
+    {
+      "text": "Centralización: mayor control y uniformidad, pero ralentiza decisiones y puede desmotivar niveles bajos. Descentralización: mayor agilidad y adaptabilidad local, pero riesgo de pérdida de control y acciones inconsistentes con los objetivos globales.",
+      "hl": false
+    },
+    {
+      "text": "Los cinco **mecanismos de coordinación** de Mintzberg son: ajuste mutuo (comunicación informal), supervisión directa (un gerente ordena y controla), estandarización de procesos (manuales y protocolos), estandarización de resultados/outputs (se fija el qué, no el cómo) y estandarización de habilidades/skills (formación estandarizada, como en hospitales).",
+      "hl": false
+    },
+    {
+      "text": "La **coordinación** es el proceso de integrar las actividades de las partes independientes de una organización para alcanzar sus metas. A mayor especialización y división del trabajo, mayor necesidad de coordinación.",
+      "hl": false
+    }
+  ],
+  "resumen": "La distribución del poder en una organización se define por su nivel de jerarquía y el grado de centralización o descentralización en la toma de decisiones. Para integrar las partes especializadas, Mintzberg identificó cinco mecanismos de coordinación que van desde la comunicación informal hasta la estandarización de habilidades. Elegir la combinación adecuada de estos mecanismos es determinante para la eficiencia y adaptabilidad de cualquier organización.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo3",
+    "jerarquia",
+    "centralizacion",
+    "descentralizacion",
+    "coordinacion",
+    "mintzberg"
+  ],
+  "id": "giORkqg0KwU3zDUejTzkH",
+  "fecha": "2026-05-04"
+}

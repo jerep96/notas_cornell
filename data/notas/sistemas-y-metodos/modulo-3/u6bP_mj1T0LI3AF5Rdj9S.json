@@ -1,0 +1,43 @@
+{
+  "titulo": "Poder, influencia y autoridad: conceptos fundamentales",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 3",
+  "tematicaDetectada": "Poder, influencia y autoridad en las organizaciones",
+  "fuente": "APU 0177 — Poder y Autoridad / La Organización: El Poder y la Autoridad",
+  "preguntas": [
+    "¿Cuál es la diferencia entre poder e influencia?",
+    "¿Qué distingue a la autoridad del poder en general?",
+    "¿El poder requiere necesariamente un cargo formal para existir?",
+    "¿Cómo surge la autoridad formal dentro de una organización?",
+    "¿Qué relación tiene la influencia con el poder?"
+  ],
+  "notas": [
+    {
+      "text": "El **poder** es la capacidad potencial de un individuo o grupo para modificar el comportamiento o las actitudes de otros. Se define como la habilidad de A para hacer que B haga algo que de otra manera no haría. Su mera existencia puede afectar conductas, aunque no se esté ejerciendo activamente.",
+      "hl": true
+    },
+    {
+      "text": "La **influencia** es la manifestación activa del poder: es el ejercicio concreto de esa capacidad que produce un cambio real en el comportamiento o actitud de otra persona. Si el poder es la capacidad, la influencia es el verbo en acción.",
+      "hl": false
+    },
+    {
+      "text": "La **autoridad** es poder legitimado por la estructura formal de la organización. Es el derecho a dar órdenes y esperar obediencia, conferido por un cargo. A diferencia del poder general, la autoridad es jerárquica y fluye de arriba hacia abajo por la cadena de mando.",
+      "hl": false
+    },
+    {
+      "text": "La **autoridad formal** surge del reconocimiento del derecho legítimo del influyente por parte del influenciado, o por la aceptación de los empleados. No se basa en cualidades personales sino en el cargo reconocido por toda la organización.",
+      "hl": false
+    }
+  ],
+  "resumen": "Poder, influencia y autoridad son tres conceptos relacionados pero distintos. El poder es una capacidad latente para cambiar conductas; la influencia es esa capacidad puesta en acción; y la autoridad es el poder institucionalizado por la estructura formal. Comprender sus diferencias es clave para analizar cómo se dirige y coordina cualquier organización.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo3",
+    "poder",
+    "influencia",
+    "autoridad",
+    "organizacion"
+  ],
+  "id": "u6bP_mj1T0LI3AF5Rdj9S",
+  "fecha": "2026-05-04"
+}

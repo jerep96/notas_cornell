@@ -1,0 +1,47 @@
+{
+  "titulo": "Sistema de operaciones, formularios, layout y flujogramas",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 6",
+  "tematicaDetectada": "Flujo de información y representación de circuitos",
+  "fuente": "APU 0177 — El proceso administrativo y la optimización de operaciones",
+  "preguntas": [
+    "¿Qué componentes tiene el sistema de operaciones como modelo de transformación?",
+    "¿Qué rol cumple el sistema de información y control dentro del sistema de operaciones?",
+    "¿Qué es un circuito administrativo y cómo se representa visualmente?",
+    "¿Qué significa cada símbolo básico del flujograma (óvalo, rectángulo, rombo, triángulo)?",
+    "¿Por qué el layout de oficinas impacta en la operatividad del personal?"
+  ],
+  "notas": [
+    {
+      "text": "El **sistema de operaciones** modela la organización como un ciclo: **inputs** (recursos de proveedores) → **transformación** (procesos) → **outputs** (bienes/servicios para clientes), con retroalimentación del sistema de información y control.",
+      "hl": true
+    },
+    {
+      "text": "Un **circuito administrativo** es la secuencia de operaciones que sigue un documento o información en la organización. Se representa con un **flujograma** para detectar deficiencias, duplicaciones y fallas.",
+      "hl": false
+    },
+    {
+      "text": "Simbología clave: **óvalo** = operación/acción; **rectángulo** = control/verificación; **'D'** = demora; **rombo** = decisión (Sí/No); rectángulo con base curva = documento; **triángulo** = archivo (↓ definitivo, ↑ transitorio).",
+      "hl": false
+    },
+    {
+      "text": "Los **formularios** son el principal vehículo de información formal. Los formularios digitales mejoran seguridad, almacenamiento y experiencia en múltiples dispositivos.",
+      "hl": false
+    },
+    {
+      "text": "El **layout de oficinas** impacta directamente en la operatividad: un buen diseño facilita la comunicación, minimiza traslados innecesarios y optimiza el ambiente de trabajo.",
+      "hl": false
+    }
+  ],
+  "resumen": "El sistema de operaciones entiende a la organización como un sistema de transformación con inputs, procesos, outputs y un mecanismo de retroalimentación. El flujo de información se formaliza con formularios y se visualiza con flujogramas, que usan simbología estandarizada para mapear circuitos administrativos. Esta representación gráfica permite identificar ineficiencias con mucha más claridad que una descripción textual.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo6",
+    "flujograma",
+    "circuito-administrativo",
+    "sistema-operaciones",
+    "layout"
+  ],
+  "id": "-A27AOkcMZM9G39mk9PtT",
+  "fecha": "2026-05-04"
+}

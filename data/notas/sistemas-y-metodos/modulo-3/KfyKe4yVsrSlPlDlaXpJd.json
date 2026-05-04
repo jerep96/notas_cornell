@@ -1,0 +1,43 @@
+{
+  "titulo": "Tipos de autoridad: lineal, staff y funcional",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 3",
+  "tematicaDetectada": "Tipos de autoridad formal en la estructura organizacional",
+  "fuente": "APU 0177 — Poder y Autoridad",
+  "preguntas": [
+    "¿Qué es la autoridad lineal y cómo fluye dentro de la organización?",
+    "¿Qué función cumple la autoridad de staff y qué no puede hacer?",
+    "¿En qué se diferencia la autoridad funcional de las otras dos?",
+    "¿Cuál de los tres tipos rompe el principio de unidad de mando?",
+    "¿Qué departamentos son ejemplos típicos de autoridad de staff?"
+  ],
+  "notas": [
+    {
+      "text": "La **autoridad lineal** fluye directamente por la cadena de mando: los gerentes con este tipo de autoridad tienen responsabilidades directas para alcanzar las metas de la organización. Es la columna vertebral de la jerarquía, con relaciones directas jefe-subordinado.",
+      "hl": true
+    },
+    {
+      "text": "La **autoridad de staff** corresponde a individuos o departamentos que brindan asesoramiento y servicios a los gerentes de línea, pero no pueden dar órdenes directas a los departamentos operativos. Ejemplos: RR.HH., Jurídico, I+D.",
+      "hl": false
+    },
+    {
+      "text": "La **autoridad funcional** otorga a miembros del staff el derecho de controlar actividades específicas en otros departamentos, rompiendo la unidad de mando. Se usa para garantizar uniformidad en políticas transversales. Ejemplo: Finanzas exigiendo un formato de reporte a todos los departamentos.",
+      "hl": false
+    },
+    {
+      "text": "La distinción clave: autoridad lineal **manda**, autoridad staff **asesora**, autoridad funcional **controla en su área específica** aunque sea sobre departamentos que no dependen jerárquicamente de ella.",
+      "hl": false
+    }
+  ],
+  "resumen": "La autoridad formal en una organización se distribuye en tres tipos según la función que cumple. La autoridad lineal opera por la cadena de mando directa. La de staff asesora sin dar órdenes. La funcional es una excepción que permite a un área de staff controlar aspectos específicos de otros departamentos para garantizar consistencia en toda la organización. Conocer estos tipos es esencial para entender cómo se reparte el poder en estructuras organizacionales complejas.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo3",
+    "autoridad-lineal",
+    "autoridad-staff",
+    "autoridad-funcional",
+    "estructura-organizacional"
+  ],
+  "id": "KfyKe4yVsrSlPlDlaXpJd",
+  "fecha": "2026-05-04"
+}

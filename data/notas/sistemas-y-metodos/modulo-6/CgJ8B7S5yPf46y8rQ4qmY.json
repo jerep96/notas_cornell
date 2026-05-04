@@ -1,0 +1,42 @@
+{
+  "titulo": "Productividad y calidad como pilares del desempeño organizacional",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 6",
+  "tematicaDetectada": "Productividad, calidad y su relación",
+  "fuente": "APU 0177 — El proceso administrativo y la optimización de operaciones",
+  "preguntas": [
+    "¿Cómo se calcula la productividad y qué mide exactamente?",
+    "¿Por qué la calidad y la productividad no son conceptos opuestos?",
+    "¿Qué aporte hizo W. Edwards Deming a la visión tradicional sobre calidad y costos?",
+    "¿Qué consecuencias tiene lanzar un producto de baja calidad aunque sea rápido?"
+  ],
+  "notas": [
+    {
+      "text": "**Productividad** = outputs / inputs. El objetivo es maximizar salidas minimizando entradas: más con los mismos recursos, lo mismo con menos, o —lo ideal— mucho más con menos.",
+      "hl": true
+    },
+    {
+      "text": "La **calidad** es un término relativo: es la capacidad de un producto o servicio para satisfacer las expectativas del cliente. No es un valor absoluto.",
+      "hl": false
+    },
+    {
+      "text": "**W. Edwards Deming** demostró que mejorar la calidad reduce costos a largo plazo al disminuir desperdicios, reprocesos y errores, aumentando así la productividad real.",
+      "hl": false
+    },
+    {
+      "text": "Baja calidad genera costos ocultos: corrección de errores, atención de quejas y gestión de devoluciones, lo que desploma la productividad efectiva y daña la reputación.",
+      "hl": false
+    }
+  ],
+  "resumen": "Productividad y calidad son los dos pilares del desempeño organizacional. La productividad mide la eficiencia de transformación (outputs/inputs), mientras que la calidad mide qué tan bien el resultado satisface al cliente. Contrariamente a la creencia tradicional, Deming demostró que mayor calidad no implica más costos: al reducir errores y reprocesos, la calidad eleva la productividad real y la competitividad.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo6",
+    "productividad",
+    "calidad",
+    "deming",
+    "optimizacion"
+  ],
+  "id": "CgJ8B7S5yPf46y8rQ4qmY",
+  "fecha": "2026-05-04"
+}

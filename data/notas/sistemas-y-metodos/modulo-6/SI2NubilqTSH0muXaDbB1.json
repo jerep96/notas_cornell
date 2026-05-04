@@ -1,0 +1,47 @@
+{
+  "titulo": "Optimización de procesos: tiempos, cycle time y Six Sigma",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 6",
+  "tematicaDetectada": "Medición de tiempos, cronogramas y metodología DMAIC",
+  "fuente": "APU 0177 — El proceso administrativo y la optimización de operaciones",
+  "preguntas": [
+    "¿Qué es el estudio de tiempos y cuál es su objetivo principal?",
+    "¿Para qué sirve el Diagrama de Gantt en la optimización de procesos?",
+    "¿Qué es el cycle time y cómo se relaciona con la capacidad de producción?",
+    "¿Cuáles son las 5 fases del ciclo DMAIC en Six Sigma y qué hace cada una?",
+    "¿Cuál es la meta estadística de Six Sigma en términos de defectos?"
+  ],
+  "notas": [
+    {
+      "text": "**Six Sigma** busca no más de 3.4 defectos por millón de oportunidades (99.9996 % de eficiencia). Su ciclo de mejora es **DMAIC**: Definir, Medir, Analizar, Mejorar (Improve) y Controlar.",
+      "hl": true
+    },
+    {
+      "text": "El **estudio de tiempos** mide el tiempo que un trabajador calificado necesita para una tarea estándar. Permite establecer tiempos de referencia para planificar, costear y evaluar desempeño.",
+      "hl": false
+    },
+    {
+      "text": "Los **cronogramas** (como el Diagrama de Gantt) distribuyen actividades en el tiempo y permiten detectar tiempos muertos y **cuellos de botella**.",
+      "hl": false
+    },
+    {
+      "text": "El **cycle time** es el tiempo total de inicio a fin de una tarea específica. Determina la capacidad teórica de producción (ej.: 3 min/café = 20 cafés/hora).",
+      "hl": false
+    },
+    {
+      "text": "En DMAIC: **Definir** establece el problema y objetivos; **Medir** obtiene datos cuantitativos; **Analizar** identifica la causa raíz; **Mejorar** implementa soluciones; **Controlar** sostiene la mejora.",
+      "hl": false
+    }
+  ],
+  "resumen": "Para mejorar productividad y calidad es indispensable medir y analizar procesos. El estudio de tiempos y el cycle time aportan métricas concretas, mientras que el Diagrama de Gantt visualiza dónde se pierden recursos. Six Sigma lleva la optimización al límite estadístico con su metodología DMAIC, que guía desde la identificación de un problema hasta el control permanente de la solución implementada.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo6",
+    "six-sigma",
+    "dmaic",
+    "cycle-time",
+    "optimizacion-procesos"
+  ],
+  "id": "SI2NubilqTSH0muXaDbB1",
+  "fecha": "2026-05-04"
+}

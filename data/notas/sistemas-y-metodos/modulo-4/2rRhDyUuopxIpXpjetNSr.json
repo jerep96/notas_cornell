@@ -1,0 +1,43 @@
+{
+  "titulo": "Teorías contemporáneas de liderazgo: transformacional y situacional",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 4",
+  "tematicaDetectada": "Liderazgo transformacional y situacional",
+  "fuente": "APU 0177 — La Dirección: Motivación, Liderazgo, Negociación, Toma de decisiones",
+  "preguntas": [
+    "¿En qué se diferencia el liderazgo transformacional del transaccional?",
+    "¿Cuáles son las tres claves del liderazgo transformacional?",
+    "¿Qué propone el liderazgo situacional de Hersey y Blanchard?",
+    "¿Qué variable central usa el liderazgo situacional para adaptar el estilo del líder?",
+    "¿Por qué el liderazgo situacional afirma que no existe un único estilo óptimo?"
+  ],
+  "notas": [
+    {
+      "text": "El **liderazgo transformacional** inspira a los seguidores a trascender sus propios intereses por el bien de la organización. Sus tres claves son: generar una **visión compartida**, brindar **inspiración** y fomentar la **estimulación intelectual** para resolver problemas de nuevas formas.",
+      "hl": true
+    },
+    {
+      "text": "El **liderazgo situacional** (Hersey & Blanchard) propone que no existe un único mejor estilo de liderazgo válido para todas las situaciones. El líder debe diagnosticar el entorno y **adaptar su estilo** según el nivel de madurez del colaborador.",
+      "hl": false
+    },
+    {
+      "text": "La **madurez** en el liderazgo situacional tiene dos componentes: competencia (conocimiento y habilidades para la tarea) y compromiso (motivación y confianza del colaborador). A mayor madurez, el líder puede delegar más y dirigir menos.",
+      "hl": false
+    },
+    {
+      "text": "El liderazgo transformacional está fuertemente asociado al **poder de referencia** (carisma, integridad) — los líderes transformacionales no dependen de la recompensa o la coerción para motivar a sus equipos.",
+      "hl": false
+    }
+  ],
+  "resumen": "Las teorías contemporáneas superan la visión de la rejilla al reconocer que el contexto importa. El liderazgo transformacional apuesta a inspirar y generar visión compartida para que los seguidores superen sus intereses individuales. El liderazgo situacional de Hersey y Blanchard plantea que el estilo óptimo varía según el nivel de madurez del colaborador, exigiendo al líder flexibilidad y capacidad de diagnóstico constante.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo4",
+    "liderazgo-transformacional",
+    "liderazgo-situacional",
+    "hersey-blanchard",
+    "madurez"
+  ],
+  "id": "2rRhDyUuopxIpXpjetNSr",
+  "fecha": "2026-05-04"
+}

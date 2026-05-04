@@ -1,0 +1,47 @@
+{
+  "titulo": "Grupo vs. Equipo: diferencia y sinergia",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 2",
+  "tematicaDetectada": "Diferencia entre grupo y equipo de trabajo",
+  "fuente": "APU 0177 — Tipos de puestos y tipos de equipos",
+  "preguntas": [
+    "¿Qué diferencia fundamental hay entre un grupo y un equipo de trabajo?",
+    "¿Qué es la sinergia y cómo se expresa en un equipo?",
+    "¿Cómo es el liderazgo en un grupo vs. en un equipo?",
+    "¿Qué tipo de responsabilidad tiene cada uno?",
+    "¿Qué tipos de equipos pueden existir dentro de una organización?"
+  ],
+  "notas": [
+    {
+      "text": "La diferencia clave entre grupo y equipo es la **sinergia**: en un grupo el resultado es igual a la suma de esfuerzos individuales (EGrupo = ΣEIndividual), mientras que en un equipo el resultado supera esa suma (EEquipo > ΣEIndividual), el efecto **1+1=3**.",
+      "hl": true
+    },
+    {
+      "text": "Un **grupo** tiene metas individuales, responsabilidad individual y liderazgo único y fuerte. Los miembros interactúan principalmente para compartir información y mejorar su desempeño individual.",
+      "hl": false
+    },
+    {
+      "text": "Un **equipo** tiene meta colectiva, responsabilidad individual y mutua, y liderazgo compartido. Sus miembros tienen habilidades complementarias y se sienten mutuamente responsables del resultado.",
+      "hl": false
+    },
+    {
+      "text": "Un equipo se define como dos o más personas que interactúan y se influyen entre sí con un **propósito común**. La actitud personal en el trabajo en equipo también forma parte de la evaluación del empleado.",
+      "hl": false
+    },
+    {
+      "text": "Dentro de una organización pueden coexistir **equipos formales** (creados deliberadamente por la estructura) e **informales** (surgidos espontáneamente entre los empleados).",
+      "hl": false
+    }
+  ],
+  "resumen": "No toda reunión de personas es un equipo: la diferencia central con un grupo es la sinergia, ese efecto colectivo donde el resultado supera la suma de partes. Mientras el grupo trabaja con metas individuales y liderazgo único, el equipo comparte metas, liderazgo y responsabilidad mutua. Dentro de cualquier organización pueden coexistir equipos formales e informales, y el desempeño en ambos impacta en la evaluación del empleado.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo2",
+    "grupo",
+    "equipo",
+    "sinergia",
+    "trabajo-en-equipo"
+  ],
+  "id": "jzzXcF63yfBN8YrpKQvc8",
+  "fecha": "2026-05-04"
+}

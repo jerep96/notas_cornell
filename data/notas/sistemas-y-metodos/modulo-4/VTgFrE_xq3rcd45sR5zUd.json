@@ -1,0 +1,43 @@
+{
+  "titulo": "Negociación y toma de decisiones",
+  "materiaDetectada": "Sistemas y Métodos",
+  "moduloDetectado": "Módulo 4",
+  "tematicaDetectada": "Negociación y proceso racional de toma de decisiones",
+  "fuente": "APU 0177 — La Dirección: Motivación, Liderazgo, Negociación, Toma de decisiones",
+  "preguntas": [
+    "¿Qué es el conflicto en el contexto organizacional y qué lo origina?",
+    "¿Cuál es la diferencia entre el enfoque duro y el suave en la negociación?",
+    "¿Cuáles son los ocho elementos necesarios para que exista una negociación?",
+    "¿Cuáles son las cinco etapas del proceso racional de toma de decisiones?",
+    "¿Qué elemento de la negociación suele estar ausente al inicio de un conflicto y cómo se construye?"
+  ],
+  "notas": [
+    {
+      "text": "El **conflicto** es un desacuerdo sobre la asignación de recursos escasos o diferencias en cuanto a metas o valores. La **negociación** es la aplicación de habilidades de comunicación, liderazgo y motivación para manejar conflictos y lograr resultados satisfactorios para ambas partes.",
+      "hl": true
+    },
+    {
+      "text": "Enfoque **duro**: posición rígida, desconfianza, solo ganar vale. Enfoque **suave**: evita el conflicto, cede siempre, busca el acuerdo a cualquier costo. Ninguno es óptimo en contextos organizacionales complejos — se busca el enfoque integrador.",
+      "hl": false
+    },
+    {
+      "text": "Elementos necesarios para negociar: predisposición al acuerdo, campo de intercambio posible, intereses mutuamente satisfacibles, sacrificio proporcional a la satisfacción, intercomunicación, **integración** (el más difícil de construir), cierto grado de ambigüedad y al menos un interés en conflicto.",
+      "hl": false
+    },
+    {
+      "text": "El **proceso racional de toma de decisiones** tiene cinco etapas: (1) definir el problema, (2) analizar el problema, (3) evaluar las alternativas, (4) elegir las alternativas, (5) aplicar la decisión. El ciclo se cierra con retroalimentación que puede reiniciarlo.",
+      "hl": false
+    }
+  ],
+  "resumen": "La negociación surge siempre de un conflicto y requiere que ambas partes tengan predisposición al acuerdo, campo de intercambio y, crucialmente, integración: la disposición a construir soluciones conjuntas. El enfoque duro y el suave representan extremos ineficaces; el objetivo es un resultado mutuamente beneficioso. La toma de decisiones, por su parte, es un proceso estructurado de cinco etapas que reduce la incertidumbre y mejora la calidad de las elecciones gerenciales.",
+  "tags": [
+    "sistemas-y-metodos",
+    "modulo4",
+    "negociacion",
+    "conflicto",
+    "toma-de-decisiones",
+    "enfoque-duro-suave"
+  ],
+  "id": "VTgFrE_xq3rcd45sR5zUd",
+  "fecha": "2026-05-04"
+}
